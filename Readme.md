@@ -3,14 +3,14 @@
 ## Integrantes
 
 > - Pablo Rocha A01028638
-> - Nombre A0xxxxxxxxxx
+> - Miguel Arriaga A01028570
 > - Nombre A0xxxxxxxxxx
 > - Nombre A0xxxxxxxxxx
 > - Nombre A0xxxxxxxxxx
 
 ## Resumen
 
-Repositorio para la clase de Contrucción de Software.
+Repositorio para la clase TC2005B: Contrucción de Software y Toma de Decisiones.
 
 ## Table of contents
 
