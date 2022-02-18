@@ -5,7 +5,7 @@
 > - Pablo Rocha A01028638
 > - Miguel Arriaga A01028570
 > - Andrés Briseño A01352283
-> - Nombre A0xxxxxxxxxx
+> - Salvador Salgado A01422874
 > - Nombre A0xxxxxxxxxx
 
 ## Resumen
