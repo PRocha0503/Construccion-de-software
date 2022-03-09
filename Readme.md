@@ -1,22 +1,22 @@
-# Contruccion de Software
+# Software-Construction-And-Decision-Making
 
-## Integrantes
+## Team members
 
 > - Pablo Rocha A01028638
 > - Miguel Arriaga A01028570
 > - Luis Javier Karam A01751941
 
-## Resumen
+## Summary
 
-Repositorio para la clase TC2005B: Contrucción de Software y Toma de Decisiones.
+Github repository for the "TC2005B Construcción de software y toma de decisiones" final project, a videogame for Percussive Arts Society.
 
 ## Table of contents
 
 Use for instance <https://github.com/ekalinin/github-markdown-toc>:
 
-> - [Titulo](#contruccion-de-software)
-> - [Integrantes](#integrantes)
-> - [Resumen](#resumen)
+> - [Title](#software-construction-and-decision-making)
+> - [Team members](#team-members)
+> - [Summary](#summary)
 > - [Table of contents](#table-of-contents)
 >   - [Installation](#installation)
 >   - [Usage](#usage)
@@ -40,10 +40,10 @@ Use for instance <https://github.com/ekalinin/github-markdown-toc>:
 
 ### Content
 
-> - project - proyecto final
-> - db - modulo de bases de datos
-> - web - modulo de web
-> - videojuego - modulo de videojuego
+> - project - Final project
+> - db - Database module
+> - web - Web module
+> - videojuego - Videogames module
 
 ### Build
 

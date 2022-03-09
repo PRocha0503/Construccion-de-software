@@ -5,7 +5,7 @@
 ---
 
 ##### **Pablo Rocha A01028638 PONGAN SUS NOMBRES**
-##### **Miguel Arriaga A01028570
+##### \*\*Miguel Arriaga A01028570
 
 ##
 
@@ -48,16 +48,16 @@
 
 ### **Summary**
 
-The game in going to be inspired in Guitar Hero,adapted for battery and learning. Notes are going to move on a partiture and the player needs to play them at the correct time. This will help the player lear to read partitudes and rythm.
+The game is going to be inspired in Guitar Hero, adapted for drumset learning and training. Musical notes are going to move on a partiture accross de screen and the player needs to play them at the correct time. This will help the player learn to read partitures and rythm.
 
 ### **Gameplay**
 
-Notes will move across the screen and the player must play them at the correct time. The goal is to play the most correct notes to get the maximum score. Good scores will unlock tnew songs.
-The drums will be represented with keystorkes.
+Notes will move across the screen and the player must play them at the right time. The goal is to play the most correct notes in order to get the maximum score. Good scores will unlock new songs.
+The drums will be represented with keystrokes.
 
 ### **Mindset**
 
-We want to provoke a drumster mindset to the player. The feeling of what is like to play music and slowly improve. The player will feel the stress that comes from learning a new instrument and the glory of achiving a goal. We intend to achive this by challenging the user to slowly learn new song and unlocking new challenges.
+We want to provoke a drummer mindset to the player. The feeling of what it is like to play music and slowly improve. The player will feel the stress that comes from learning a new instrument and the glory of achieving a goal. We intend to achieve this by challenging the user to slowly learn new songs and unlock new challenges.
 
 ## _Technical_
 
