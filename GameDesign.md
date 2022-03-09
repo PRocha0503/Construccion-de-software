@@ -123,12 +123,12 @@ The playability of each level will also be based around the same gameplay concep
 
 ### **Game Flow**
 
-1. 
-1. Player/hooded figure will be sat in a drumset, in a cemetery.
-2. Notes will begin to fly accross the screen as music starts, the player must play them
-3. The ambient, already surrounded by tombstones, will become more party-intense as the player plays notes.
-4. Skeletons and other monsters will begin to rise from the death and dance and party as the player progresses though the song/score.
-5. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear. Otherwise, a retry pop up will appear.
+1. In the main screen, the player will be able to login and start a new game or existing one.
+2. Player/hooded figure will be sat in a drumset, in a cemetery.
+3. Notes will begin to fly accross the screen as music starts, the player must play them
+4. The ambient, already surrounded by tombstones, will become more party-intense as the player plays notes.
+5. Skeletons and other monsters will begin to rise from the death and dance and party as the player progresses though the song/score.
+6. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear. Otherwise, a retry pop up will appear.
 
 _(example)_
 
