@@ -101,44 +101,38 @@ The team will also have to develop an algorithm so that the notes move across th
 
 ## _Level Design_
 
----
+The game will be based in a cemetery, in which a hooded figure will play the drumset and other monsters such as skeletons and blobs will cheer for him.
+
+The game will have three base levels, which are going to be represented as songs. Each song will be harder than the previous, including more difficult notes and tempos to play. 
+
+The visual styles of the levels are all going to be similar, however, more elements are going to be added as the level progresses. This graphic style will be described fully in the graphic section. 
+
+The playability of each level will also be based around the same gameplay concept already described. The only new mechanics introduced with each level will be faster tempos, meaning that the notes will travel across the screen with higher intensity and more complicated partitures to read.
 
 ### **Themes**
 
-1. Forest
+1. Cemetery
    1. Mood
-      1. Dark, calm, foreboding
+      1. Dark, party
 2. Objects
    1. _Ambient_
-      1. Fireflies
-      2. Beams of moonlight
-      3. Tall grass
+      1. Tombstones
+      2. Skeletons
+      3. Blobs
+      4. Bats
+      5. Dancing monsters
+      6. Party lights
    2. _Interactive_
-      1. Wolves
-      2. Goblins
-      3. Rocks
-3. Castle
-   1. Mood
-      1. Dangerous, tense, active
-   2. Objects
-      1. _Ambient_
-         1. Rodents
-         2. Torches
-         3. Suits of armor
-      2. _Interactive_
-         1. Guards
-         2. Giant rats
-         3. Chests
+      1. Music notes made out of bones
 
 ### **Game Flow**
 
-1. Player starts in forest
-2. Pond to the left, must move right
-3. To the right is a hill, player jumps to traverse it (&quot;jump&quot; taught)
-4. Player encounters castle - door&#39;s shut and locked
-5. There&#39;s a window within jump height, and a rock on the ground
-6. Player picks up rock and throws at glass (&quot;throw&quot; taught)
-7. … etc.
+1. 
+1. Player/hooded figure will be sat in a drumset, in a cemetery.
+2. Notes will begin to fly accross the screen as music starts, the player must play them
+3. The ambient, already surrounded by tombstones, will become more party-intense as the player plays notes.
+4. Skeletons and other monsters will begin to rise from the death and dance and party as the player progresses though the song/score.
+5. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear. Otherwise, a retry pop up will appear.
 
 _(example)_
 
