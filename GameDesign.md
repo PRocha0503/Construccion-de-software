@@ -14,34 +14,33 @@
 
 ---
 
-1. [Index](#index)
-2. [Game Design](#game-design)
-   1. [Summary](#summary)
-   2. [Gameplay](#gameplay)
-   3. [Mindset](#mindset)
-3. [Technical](#technical)
-   1. [Screens](#screens)
-   2. [Controls](#controls)
-   3. [Mechanics](#mechanics)
-4. [Level Design](#level-design)
-   1. [Themes](#themes)
-      1. Ambience
-      2. Objects
-         1. Ambient
-         2. Interactive
-      3. Challenges
-   2. [Game Flow](#game-flow)
-5. [Development](#development)
-   1. [Abstract Classes](#abstract-classes--components)
-   2. [Derived Classes](#derived-classes--component-compositions)
-6. [Graphics](#graphics)
-   1. [Style Attributes](#style-attributes)
-   2. [Graphics Needed](#graphics-needed)
-7. [Sounds/Music](#soundsmusic)
-   1. [Style Attributes](#style-attributes-1)
-   2. [Sounds Needed](#sounds-needed)
-   3. [Music Needed](#music-needed)
-8. [Schedule](#schedule)
+- [**DrumStar**](#drumstar)
+  - [_Game Design Document_](#game-design-document)
+        - [**Pablo Rocha A01028638 PONGAN SUS NOMBRES**](#pablo-rocha-a01028638-pongan-sus-nombres)
+        - [**Miguel Arriaga A01028570**](#miguel-arriaga-a01028570)
+  - [_Index_](#index)
+  - [_Game Design_](#game-design)
+    - [**Summary**](#summary)
+    - [**Gameplay**](#gameplay)
+    - [**Mindset**](#mindset)
+  - [_Technical_](#technical)
+    - [**Screens**](#screens)
+    - [**Controls**](#controls)
+    - [**Mechanics**](#mechanics)
+  - [_Level Design_](#level-design)
+    - [**Themes**](#themes)
+    - [**Game Flow**](#game-flow)
+  - [_Development_](#development)
+    - [**Abstract Classes / Components**](#abstract-classes--components)
+    - [**Derived Classes / Component Compositions**](#derived-classes--component-compositions)
+  - [_Graphics_](#graphics)
+    - [**Style Attributes**](#style-attributes)
+    - [**Graphics Needed**](#graphics-needed)
+  - [_Sounds/Music_](#soundsmusic)
+    - [**Style Attributes**](#style-attributes-1)
+    - [**Sounds Needed**](#sounds-needed)
+    - [**Music Needed**](#music-needed)
+  - [_Schedule_](#schedule)
 
 ## _Game Design_
 
@@ -148,37 +147,36 @@ _(example)_
 
 ### **Abstract Classes / Components**
 
-1. BasePhysics
-   1. BasePlayer
-   2. BaseEnemy
-   3. BaseObject
-2. BaseObstacle
-3. BaseInteractable
+1. Conductor (Used to keep track of the song)
+2. SceneLoader (Used to manage scenes)
+3. MusicPlayer
 
 _(example)_
 
 ### **Derived Classes / Component Compositions**
 
-1. BasePlayer
-   1. PlayerMain
-   2. PlayerUnlockable
-2. BaseEnemy
-   1. EnemyWolf
-   2. EnemyGoblin
-   3. EnemyGuard (may drop key)
-   4. EnemyGiantRat
-   5. EnemyPrisoner
-3. BaseObject
-   1. ObjectRock (pick-up-able, throwable)
-   2. ObjectChest (pick-up-able, throwable, spits gold coins with key)
-   3. ObjectGoldCoin (cha-ching!)
-   4. ObjectKey (pick-up-able, throwable)
-4. BaseObstacle
-   1. ObstacleWindow (destroyed with rock)
-   2. ObstacleWall
-   3. ObstacleGate (watches to see if certain buttons are pressed)
-5. BaseInteractable
-   1. InteractableButton
+
+1. BaseNote
+   1. WholeNote
+   2. HalfNote
+   3. QuarterNote
+   4. EightNote
+   5. SixteenthNote
+2. BaseRest
+   1. WholeRest
+   2. HalfRest
+   3. QuarterRest
+   4. EightRest
+   5. SixteenRest
+3. BaseHitbox
+   1. EarlyHitbox
+   2. GoodHitbox
+   3. PerfectHitbox
+   4. LateHitbox
+4. BaseDancer
+   1. SkeletonDancer
+   2. SlimeDancer
+   3. MonsterDancer
 
 _(example)_
 
@@ -188,22 +186,21 @@ _(example)_
 
 ### **Style Attributes**
 
-What kinds of colors will you be using? Do you have a limited palette to work with? A post-processed HSV map/image? Consistency is key for immersion.
+Dark palette consistent for all the levels
 
-What kind of graphic style are you going for? Cartoony? Pixel-y? Cute? How, specifically? Solid, thick outlines with flat hues? Non-black outlines with limited tints/shades? Emphasize smooth curvatures over sharp angles? Describe a set of general rules depicting your style here.
+Pixel-Art graphics sorrounded by black lines (Cartoony style)
 
-Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), are great for teaching the player how to play through trial and error, instead of scripting a lengthy tutorial. What kind of visual feedback are you going to use to let the player know they&#39;re interacting with something? That they \*can\* interact with something?
+Visual feedback for hitting a note right (flashes of color, text showing how good the press was) as well as if there was a bad hit or none at all, progresively more audience as the score gets higher.
 
 ### **Graphics Needed**
 
 1. Characters
-   1. Human-like
-      1. Goblin (idle, walking, throwing)
-      2. Guard (idle, walking, stabbing)
-      3. Prisoner (walking, running)
-   2. Other
-      1. Wolf (idle, walking, running)
-      2. Giant Rat (idle, scurrying)
+   1. Hooded-Figure (Player)
+   2. Dancers
+      1. Skeleton
+      2. Slime
+      3. Zombie
+      4. etc.
 2. Blocks
    1. Dirt
    2. Dirt/Grass
@@ -212,18 +209,26 @@ Well-designed feedback, both good (e.g. leveling up) and bad (e.g. being hit), a
    5. Tiled Floor
    6. Weathered Stone Block
    7. Weathered Stone Bricks
-3. Ambient
-   1. Tall Grass
-   2. Rodent (idle, scurrying)
-   3. Torch
-   4. Armored Suit
-   5. Chains (matching Weathered Stone Bricks)
-   6. Blood stains (matching Weathered Stone Bricks)
-4. Other
-   1. Chest
-   2. Door (matching Stone Bricks)
-   3. Gate
-   4. Button (matching Weathered Stone Bricks)
+3. Scene
+   1. Background Graveyard
+      1. Tombstones
+      2. Bones
+      3. Grass
+      4. Dirt
+      5. river?
+   2. Pentagram
+      1. Large bones for pentagram lines
+      2. Notes (Skull themed)
+         1. Whole note
+         2. Half note
+         3. Quarter note
+         4. Eighth note
+         5. Sixteenth note
+         6. Whole rest
+         7. Half rest
+         8. Quarter rest
+         9. Eighth rest
+         10. Sixteenth rest
 
 _(example)_
 
