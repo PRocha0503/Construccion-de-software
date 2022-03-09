@@ -5,6 +5,7 @@
 ---
 
 ##### **Pablo Rocha A01028638 PONGAN SUS NOMBRES**
+##### **Miguel Arriaga A01028570
 
 ##
 
@@ -51,7 +52,7 @@ The game in going to be inspired in Guitar Hero,adapted for battery and learning
 
 ### **Gameplay**
 
-Notes will move acroos the screen and the player must play them at the correct time. The goal is to play the most correct notes to get the maximum score. Good scores will unlock tnew songs.
+Notes will move across the screen and the player must play them at the correct time. The goal is to play the most correct notes to get the maximum score. Good scores will unlock tnew songs.
 The drums will be represented with keystorkes.
 
 ### **Mindset**
