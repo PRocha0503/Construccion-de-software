@@ -12,8 +12,6 @@ Github repository for the "TC2005B Construcción de software y toma de decisione
 
 ## Table of contents
 
-Use for instance <https://github.com/ekalinin/github-markdown-toc>:
-
 > - [Title](#software-construction-and-decision-making)
 > - [Team members](#team-members)
 > - [Summary](#summary)
