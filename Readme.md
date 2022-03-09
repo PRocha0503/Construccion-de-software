@@ -22,10 +22,7 @@ Use for instance <https://github.com/ekalinin/github-markdown-toc>:
 >   - [Usage](#usage)
 >     - [Screenshots](#screenshots)
 >     - [Features](#features)
->   - [Code](#code)
 >     - [Content](#content)
->     - [Build](#build)
->     - [Deploy (how to install build product)](#deploy-how-to-install-build-product)
 >   - [Resources (Documentation and other links)](#resources-documentation-and-other-links)
 
 ## Installation
@@ -36,23 +33,11 @@ Use for instance <https://github.com/ekalinin/github-markdown-toc>:
 
 ### Features
 
-## Code
-
 ### Content
 
 > - project - Final project
-> - db - Database module
-> - web - Web module
-> - videojuego - Videogames module
-
-### Build
-
-    mvn clean install
-
-Build options:
-
-- ...
-
-### Deploy (how to install build product)
+> - db-module - Database module
+> - web-module - Web module
+> - videogame-moduule - Videogames module
 
 ## Resources (Documentation and other links)
