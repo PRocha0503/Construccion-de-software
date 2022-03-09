@@ -82,19 +82,22 @@ We want to provoke a drummer mindset to the player. The feeling of what it is li
 
 ### **Controls**
 
-The player will interact with the game with keystrokes. Each frum will be represented by key. For example: The bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they willl be decided by the team.
+The player will interact with the game with keystrokes. Each drum will be represented by a key. For example, the bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they will be decided by the development team.
 
-The in-game-events will are going to be, when a player hits a key the corresponing drum will sound. If the key corresponds to the drum thast had to be played according to the partiture, the score will increse.
+The in-game-events triggered by the player are going to be:
+
+1.  when a player hits a key the corresponing drum will sound.
+2.  If the key corresponds to the drum that had to be played according to the partiture and the timing is correct, the player score will increse.
 
 ### **Mechanics**
 
 <!-- Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc. -->
 
-A very intresing mechanic to implement will be converting music or string into something that can be procced by Unity to intance the correct notes at the correct time.
+A very intresing mechanic to implement will be converting a drumset partiture into something that can be interpreted and processed by Unity to instance the right notes at the correct time.
 
-Another algorithm will be one to implement different trigger zones that give the player varing points, ej: 10 for a perfect timeing note.
+Another game mechanic to implement are different trigger zones, that give the player different amount of points, for example, 10 points for a perfect timing note.
 
-The team will also have to develop an algorithm so notes move in the screen at the correct tempo and different length of nodes are represented accordingly.
+The team will also have to develop an algorithm so that the notes move across the screen at the correct tempo and the different length of notes are represented accordingly.
 
 ## _Level Design_
 
