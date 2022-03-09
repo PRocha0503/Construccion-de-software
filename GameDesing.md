@@ -49,16 +49,16 @@
 
 ### **Summary**
 
-The game is going to be inspired in Guitar Hero, adapted for drumset learning and training. Musical notes are going to move on a partiture accross de screen and the player needs to play them at the correct time. This will help the player learn to read partitures and rhythm.
+The game in going to be inspired in Guitar Hero, adapted for battery and learning. Notes are going to move across the screen on a partiture and the player needs to play them at the correct time. This will help the player lean to read partitudes and rhythm.
 
 ### **Gameplay**
 
-Notes will move across the screen and the player must play them at the right time. The goal is to play the most correct notes in order to get the maximum score. Good scores will unlock new songs.
+Notes will move across the screen and the player must play them at the correct time. The goal is to play the most correct notes to get the maximum score. Good scores will unlock new songs.
 The drums will be represented with keystrokes.
 
 ### **Mindset**
 
-We want to provoke a drummer mindset to the player. The feeling of what it is like to play music and slowly improve. The player will feel the stress that comes from learning a new instrument and the glory of achieving a goal. We intend to achieve this by challenging the user to slowly learn new songs and unlock new challenges.
+We want to provoke a drummer mindset to the player. The feeling of what is like to play music and slowly improve. The player will feel the stress that comes from learning a new instrument and the glory of achieving a goal. We intend to achieve this by challenging the user to slowly learn new song and unlocking new challenges.
 
 ## _Technical_
 
@@ -82,22 +82,19 @@ We want to provoke a drummer mindset to the player. The feeling of what it is li
 
 ### **Controls**
 
-The player will interact with the game with keystrokes. Each drum will be represented by a key. For example, the bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they will be decided by the development team.
+The player will interact with the game with keystrokes. Each drum will be represented by key. For example: The bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they will be decided by the team.
 
-The in-game-events triggered by the player are going to be:
-
-1.  when a player hits a key the corresponding drum will sound.
-2.  If the key corresponds to the drum that had to be played according to the partiture and the timing is correct, the player score will increase.
+The in-game-events will are going to be, when a player hits a key the correspondent drum will sound. If the key corresponds to the drum that had to be played according to the partiture, the score will increase.
 
 ### **Mechanics**
 
 <!-- Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc. -->
 
-A very interesting mechanic to implement will be converting a drumset partiture into something that can be interpreted and processed by Unity to instance the right notes at the correct time.
+The first part will be to implement an algorithm capable of taking music or a string of a partiture and converting it into something readable by Unity. Then the game engine will be able to instance the adequate notes at the correct time for the music.
 
-Another game mechanic to implement are different trigger zones, that give the player different amount of points, for example, 10 points for a perfect timing note.
+When a player starts a level (song) the notes will start showing up accordingly. The correct zone will be located in the left of the screen. If you press the correct key at that time it will give you 100 points. A bit early or a bit late will give the player 60 points, very early or late will give 10.
 
-The team will also have to develop an algorithm so that the notes move across the screen at the correct tempo and the different length of notes are represented accordingly.
+When a level is completed if the minimum score is reached the player is able to move on to the next. The user will have to repeat the score if the minimum points are not reached.
 
 ## _Level Design_
 
