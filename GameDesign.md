@@ -5,7 +5,8 @@
 ---
 
 ##### **Pablo Rocha A01028638 PONGAN SUS NOMBRES**
-##### \*\*Miguel Arriaga A01028570
+
+##### **Miguel Arriaga A01028570**
 
 ##
 
@@ -65,15 +66,19 @@ We want to provoke a drummer mindset to the player. The feeling of what it is li
 
 ### **Screens**
 
+<!--
 1. Title Screen
    1. Options
 2. Level Select
 3. Game
    1. Inventory
    2. Assessment / Next Level
-4. End Credits
+4. End Credits -->
 
-_(example)_
+1. Log In Screen
+2. Home/Level Select
+3. Game
+   1. Assessment / Next Level
 
 ### **Controls**
 
@@ -83,13 +88,17 @@ The in-game-events will are going to be, when a player hits a key the corresponi
 
 ### **Mechanics**
 
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc.
+<!-- Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc. -->
+
+A very intresing mechanic to implement will be converting music or string into something that can be procced by Unity to intance the correct notes at the correct time.
+
+Another algorithm will be one to implement different trigger zones that give the player varing points, ej: 10 for a perfect timeing note.
+
+The team will also have to develop an algorithm so notes move in the screen at the correct tempo and different length of nodes are represented accordingly.
 
 ## _Level Design_
 
 ---
-
-_(Note : These sections can safely be skipped if they&#39;re not relevant, or you&#39;d rather go about it another way. For most games, at least one of them should be useful. But I&#39;ll understand if you don&#39;t want to use them. It&#39;ll only hurt my feelings a little bit.)_
 
 ### **Themes**
 
@@ -117,8 +126,6 @@ _(Note : These sections can safely be skipped if they&#39;re not relevant, or yo
          1. Guards
          2. Giant rats
          3. Chests
-
-_(example)_
 
 ### **Game Flow**
 
