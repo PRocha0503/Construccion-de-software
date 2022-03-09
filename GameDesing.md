@@ -76,7 +76,9 @@ _(example)_
 
 ### **Controls**
 
-How will the player interact with the game? Will they be able to choose the controls? What kind of in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
+The player will interact with the game with keystrokes. Each frum will be represented by key. For example: The bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they willl be decided by the team.
+
+The in-game-events will are going to be, when a player hits a key the corresponing drum will sound. If the key corresponds to the drum thast had to be played according to the partiture, the score will increse.
 
 ### **Mechanics**
 
