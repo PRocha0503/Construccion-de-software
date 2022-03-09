@@ -49,7 +49,7 @@
 
 ### **Summary**
 
-The game is going to be inspired in Guitar Hero, adapted for drumset learning and training. Musical notes are going to move on a partiture accross de screen and the player needs to play them at the correct time. This will help the player learn to read partitures and rythm.
+The game is going to be inspired in Guitar Hero, adapted for drumset learning and training. Musical notes are going to move on a partiture accross de screen and the player needs to play them at the correct time. This will help the player learn to read partitures and rhythm.
 
 ### **Gameplay**
 
@@ -86,14 +86,14 @@ The player will interact with the game with keystrokes. Each drum will be repres
 
 The in-game-events triggered by the player are going to be:
 
-1.  when a player hits a key the corresponing drum will sound.
-2.  If the key corresponds to the drum that had to be played according to the partiture and the timing is correct, the player score will increse.
+1.  when a player hits a key the corresponding drum will sound.
+2.  If the key corresponds to the drum that had to be played according to the partiture and the timing is correct, the player score will increase.
 
 ### **Mechanics**
 
 <!-- Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc. -->
 
-A very intresing mechanic to implement will be converting a drumset partiture into something that can be interpreted and processed by Unity to instance the right notes at the correct time.
+A very interesting mechanic to implement will be converting a drumset partiture into something that can be interpreted and processed by Unity to instance the right notes at the correct time.
 
 Another game mechanic to implement are different trigger zones, that give the player different amount of points, for example, 10 points for a perfect timing note.
 
