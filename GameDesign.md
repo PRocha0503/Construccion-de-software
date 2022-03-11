@@ -75,8 +75,9 @@ We want to give a drummer mindset to the player. The feeling of what it is like 
 The player will interact with the game with keystrokes. Each drum will be represented by key. For example: The bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they will be decided by the development team.
 
 The main in-game-events are going to be:
-  1. When a player hits a key the correspondent drum will sound. 
-  2. If the key corresponds to the drum that had to be played according to the partiture, the score will increase.
+
+1. When a player hits a key the correspondent drum will sound.
+2. If the key corresponds to the drum that had to be played according to the partiture, the score will increase.
 
 ### **Mechanics**
 
@@ -116,10 +117,10 @@ The playability of each level will also be based around the same gameplay concep
 
 1. In the main screen, the player will be able to login and start a new game or existing one.
 2. Player/hooded figure will be sat in a drumset, in a cemetery.
-3. Notes will begin to fly accross the screen as music starts, the player must play them.
+3. Notes will begin to fly across the screen as music starts, the player must play them.
 4. The ambient, already surrounded by tombstones, will become more party-intense as the player plays notes.
 5. Skeletons and other monsters will begin to rise from the death and dance and party as the player progresses though the song/score.
-6. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear. 
+6. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear.
 7. Otherwise, a retry pop up will appear.
 
 _(example)_
@@ -170,9 +171,9 @@ _(example)_
 
 Dark palette consistent for all the levels
 
-Pixel-Art graphics sorrounded by black lines (Cartoony style)
+Pixel-Art graphics surrounded by black lines (Cartoony style)
 
-Visual feedback for hitting a note right (flashes of color, text showing how good the press was) as well as if there was a bad hit or none at all, progresively more audience as the score gets higher.
+Visual feedback for hitting a note right (flashes of color, text showing how good the press was) as well as if there was a bad hit or none at all, progressively more audience as the score gets higher.
 
 ### **Graphics Needed**
 
@@ -220,9 +221,10 @@ _(example)_
 
 ### **Style Attributes**
 
-The music style will be very varied. Because the game wants to focus on people learning how to play drums, the bigger and more diverse our songs options are, the more will the player have the chance to practice various genres. 
+The music style will be very varied. Because the game wants to focus on people learning how to play drums, the bigger and more diverse our songs options are, the more will the player have the chance to practice various genres.
 
-For the sound effects we will add cheering noises for the crowd or booing noises for when the player messes up a few notes, we also require drum sounds that play depending on which key press is detected in the game. The drum sound should be a bit louder than usual so that the player can hear himself play and therefore make improvements on his performance. Any stylistic sounds like the crowd should have a very low volume since we dont want to overwhelm the player with sound.
+For the sound effects we will add cheering noises for the crowd or booing noises for when the player messes up a few notes, we also require drum sounds that play depending on which key press is detected in the game. The drum sound should be a bit louder than usual so that the player can hear himself play and therefore make improvements on his performance. Any stylistic sounds like the crowd should have a very low volume since we do not want to overwhelm the player with sound.
+
 ### **Sounds Needed**
 
 1. Effects
@@ -232,13 +234,12 @@ For the sound effects we will add cheering noises for the crowd or booing noises
    4. ride cymbal
    5. crash cymbal
    6. hi-hat cymbal
-   7. bass drum 
+   7. bass drum
 2. Feedback
    1. crowd cheering (High combo)
    2. crowd booing (consecutive failed notes)
    3. explosions (Very high combo)
    4. Pause menu sound
-
 
 ### **Music Needed**
 
@@ -246,7 +247,6 @@ For the sound effects we will add cheering noises for the crowd or booing noises
 2. Fast songs to push the player to improve
 3. Extremely difficult songs to give the player a long-term goal
 4. Menu music
-
 
 ## _Schedule_
 
