@@ -1,4 +1,4 @@
-# **DrumStar**
+# **Party of the Drumancer**
 
 ## _Game Design Document_
 
@@ -16,7 +16,7 @@
 
 ---
 
-- [**DrumStar**](#drumstar)
+- [**Party of the Drumancer**](#Party of the Drumancer)
   - [_Game Design Document_](#game-design-document)
   - [_Index_](#index)
   - [_Game Design_](#game-design)
