@@ -16,7 +16,7 @@
 
 ---
 
-- [**Party of the Drumancer**](#Party of the Drumancer)
+- [ Party of the Drumancer ](#party-of-the-drumancer)
   - [_Game Design Document_](#game-design-document)
   - [_Index_](#index)
   - [_Game Design_](#game-design)
