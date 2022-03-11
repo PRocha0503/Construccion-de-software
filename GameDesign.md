@@ -4,11 +4,11 @@
 
 ---
 
-##### **Pablo Rocha A01028638 PONGAN SUS NOMBRES**
+##### **Pablo Rocha A01028638**
 
 ##### **Miguel Arriaga A01028570**
 
-##### **Luis Javier Karam Galland**
+##### **Luis Javier Karam Galland A01751941**
 
 ##
 
