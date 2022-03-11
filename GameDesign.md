@@ -15,9 +15,7 @@
 ---
 
 - [**DrumStar**](#drumstar)
-  - [_Game Design Document_](#game-design-document)
-        - [**Pablo Rocha A01028638 PONGAN SUS NOMBRES**](#pablo-rocha-a01028638-pongan-sus-nombres)
-        - [**Miguel Arriaga A01028570**](#miguel-arriaga-a01028570)
+  - [_Game Design Document_](#game-design-document) - [**Pablo Rocha A01028638 PONGAN SUS NOMBRES**](#pablo-rocha-a01028638-pongan-sus-nombres) - [**Miguel Arriaga A01028570**](#miguel-arriaga-a01028570)
   - [_Index_](#index)
   - [_Game Design_](#game-design)
     - [**Summary**](#summary)
@@ -99,9 +97,9 @@ When a level is completed if the minimum score is reached the player is able to 
 
 The game will be based in a cemetery, in which a hooded figure will play the drumset and other monsters such as skeletons and blobs will cheer for him.
 
-The game will have three base levels, which are going to be represented as songs. Each song will be harder than the previous, including more difficult notes and tempos to play. 
+The game will have three base levels, which are going to be represented as songs. Each song will be harder than the previous, including more difficult notes and tempos to play.
 
-The visual styles of the levels are all going to be similar, however, more elements are going to be added as the level progresses. This graphic style will be described fully in the graphic section. 
+The visual styles of the levels are all going to be similar, however, more elements are going to be added as the level progresses. This graphic style will be described fully in the graphic section.
 
 The playability of each level will also be based around the same gameplay concept already described. The only new mechanics introduced with each level will be faster tempos, meaning that the notes will travel across the screen with higher intensity and more complicated partitures to read.
 
@@ -145,7 +143,6 @@ _(example)_
 _(example)_
 
 ### **Derived Classes / Component Compositions**
-
 
 1. BaseNote
    1. WholeNote
@@ -267,34 +264,38 @@ _(example)_
 
 ---
 
-_(define the main activities and the expected dates when they should be finished. This is only a reference, and can change as the project is developed)_
+This is only a reference, and can change as the project is developed, as the methodology being used to manage the project is SCRUM.
 
-1. develop base classes
+1. develop conversion systems
+   1. partiture system
+      1. sound to notes conversion
+2. develop base classes
    1. base entity
       1. base player
-      2. base enemy
-      3. base block
-2. base app state
+      2. base music partiture
+3. base app state
    1. game world
    2. menu world
-3. develop player and basic block classes
-   1. physics / collisions
-4. find some smooth controls/physics
-5. develop other derived classes
-   1. blocks
-      1. moving
-      2. falling
-      3. breaking
-      4. cloud
-   2. enemies
-      1. soldier
-      2. rat
-      3. etc.
-6. design levels
-   1. introduce motion/jumping
-   2. introduce throwing
-   3. mind the pacing, let the player play between lessons
-7. design sounds
-8. design music
+4. additional gameplay mechanics
+   1. physics
+   2. collisions
+5. find some smooth controls/keys
+6. develop other derived classes
+   1. effects and ambient
+      1. notes
+      2. explosions
+      3. lights
+      4. trees
+   2. undead party
+      1. skeleton
+      2. blob
+      3. zombies
+      4. etc.
+7. design levels
+   1. introduce different songs
+   2. introduce scores
+   3. mind the pacing, let the player progress at a good curve
+8. design sounds
+9. design music
 
 _(example)_
