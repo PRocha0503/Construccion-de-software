@@ -229,39 +229,33 @@ _(example)_
 
 ### **Style Attributes**
 
-Again, consistency is key. Define that consistency here. What kind of instruments do you want to use in your music? Any particular tempo, key? Influences, genre? Mood?
+The music style will be very varied. Because the game wants to focus on people learning how to play drums, the bigger and more diverse our songs options are, the more will the player have the chance to practice various genres. 
 
-Stylistically, what kind of sound effects are you looking for? Do you want to exaggerate actions with lengthy, cartoony sounds (e.g. mario&#39;s jump), or use just enough to let the player know something happened (e.g. mega man&#39;s landing)? Going for realism? You can use the music style as a bit of a reference too.
-
-Remember, auditory feedback should stand out from the music and other sound effects so the player hears it well. Volume, panning, and frequency/pitch are all important aspects to consider in both music _and_ sounds - so plan accordingly!
-
+For the sound effects we can add cheering noises for the crowd or booing noises for when the player messes up a few notes, we also require drum sounds that play depending on which key press is detected in the game. The drum sound should be a bit louder than usual so that the player can hear himself play and therefore make improvements on his performance. Any stylistic sounds like the crowd should have a very low volume since we dont want to overwhelm the player with sound.
 ### **Sounds Needed**
 
 1. Effects
-   1. Soft Footsteps (dirt floor)
-   2. Sharper Footsteps (stone floor)
-   3. Soft Landing (low vertical velocity)
-   4. Hard Landing (high vertical velocity)
-   5. Glass Breaking
-   6. Chest Opening
-   7. Door Opening
+   1. Snare drum
+   2. tom-toms
+   3. floor tom
+   4. ride cymbal
+   5. crash cymbal
+   6. hi-hat cymbal
+   7. bass drum 
 2. Feedback
-   1. Relieved &quot;Ahhhh!&quot; (health)
-   2. Shocked &quot;Ooomph!&quot; (attacked)
-   3. Happy chime (extra life)
-   4. Sad chime (died)
+   1. crowd cheering (High combo)
+   2. crowd booing (consecutive failed notes)
+   3. explosions (Very high combo)
+   4. Pause menu sound
 
-_(example)_
 
 ### **Music Needed**
 
-1. Slow-paced, nerve-racking &quot;forest&quot; track
-2. Exciting &quot;castle&quot; track
-3. Creepy, slow &quot;dungeon&quot; track
-4. Happy ending credits track
-5. Rick Astley&#39;s hit #1 single &quot;Never Gonna Give You Up&quot;
+1. Slow-paced track for easy starting levels
+2. Fast songs to push the player to improve
+3. Extremely difficult songs to give the player a long-term goal
+4. Menu music
 
-_(example)_
 
 ## _Schedule_
 
