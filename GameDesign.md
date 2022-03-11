@@ -4,11 +4,11 @@
 
 ---
 
-##### **Pablo Rocha A01028638**
+**Pablo Rocha A01028638**
 
-##### **Miguel Arriaga A01028570**
+**Miguel Arriaga A01028570**
 
-##### **Luis Javier Karam Galland A01751941**
+**Luis Javier Karam Galland A01751941**
 
 ##
 
@@ -17,7 +17,7 @@
 ---
 
 - [**DrumStar**](#drumstar)
-  - [_Game Design Document_](#game-design-document) - [**Pablo Rocha A01028638 PONGAN SUS NOMBRES**](#pablo-rocha-a01028638-pongan-sus-nombres) - [**Miguel Arriaga A01028570**](#miguel-arriaga-a01028570)
+  - [_Game Design Document_](#game-design-document)
   - [_Index_](#index)
   - [_Game Design_](#game-design)
     - [**Summary**](#summary)
