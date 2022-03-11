@@ -4,7 +4,7 @@
 
 ---
 
-<img src="https://javier.rodriguez.org.mx/itesm/2014/tecnologico-de-monterrey-blue.png"/>
+<img src="https://javier.rodriguez.org.mx/itesm/2014/tecnologico-de-monterrey-blue.png" width=50%/>
 
 ---
 
