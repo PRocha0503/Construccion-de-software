@@ -48,31 +48,22 @@
 
 ### **Summary**
 
-The game in going to be inspired in Guitar Hero, adapted for battery and learning. Notes are going to move across the screen on a partiture and the player needs to play them at the correct time. This will help the player lean to read partitudes and rhythm.
+The game in going to be inspired in Guitar Hero, adapted for a drumset learning. Notes are going to move across the screen on a partiture and the player needs to play them at the correct time. This will help the player learn to read partitures and rhythm.
 
 ### **Gameplay**
 
-Notes will move across the screen and the player must play them at the correct time. The goal is to play the most correct notes to get the maximum score. Good scores will unlock new songs.
-The drums will be represented with keystrokes.
+Notes will move across the screen and the player must play them at the correct time. The goal is to play the most correct notes possible to get the maximum score. Good scores will unlock new songs.
+The drums notes will be represented with keystrokes.
 
 ### **Mindset**
 
-We want to provoke a drummer mindset to the player. The feeling of what is like to play music and slowly improve. The player will feel the stress that comes from learning a new instrument and the glory of achieving a goal. We intend to achieve this by challenging the user to slowly learn new song and unlocking new challenges.
+We want to give a drummer mindset to the player. The feeling of what it is like to play music and slowly improve. The player will feel the stress that comes from learning a new instrument and the glory of achieving a goal. We intend to achieve this by challenging the user to slowly learn new song and unlocking new challenges.
 
 ## _Technical_
 
 ---
 
 ### **Screens**
-
-<!--
-1. Title Screen
-   1. Options
-2. Level Select
-3. Game
-   1. Inventory
-   2. Assessment / Next Level
-4. End Credits -->
 
 1. Log In Screen
 2. Home/Level Select
@@ -81,19 +72,19 @@ We want to provoke a drummer mindset to the player. The feeling of what is like 
 
 ### **Controls**
 
-The player will interact with the game with keystrokes. Each drum will be represented by key. For example: The bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they will be decided by the team.
+The player will interact with the game with keystrokes. Each drum will be represented by key. For example: The bass drum could be represented by the "J" key. The player will not be able to choose his inputs, they will be decided by the development team.
 
-The in-game-events will are going to be, when a player hits a key the correspondent drum will sound. If the key corresponds to the drum that had to be played according to the partiture, the score will increase.
+The main in-game-events are going to be:
+  1. When a player hits a key the correspondent drum will sound. 
+  2. If the key corresponds to the drum that had to be played according to the partiture, the score will increase.
 
 ### **Mechanics**
 
-<!-- Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, algorithms, etc. -->
-
-The first part will be to implement an algorithm capable of taking music or a string of a partiture and converting it into something readable by Unity. Then the game engine will be able to instance the adequate notes at the correct time for the music.
+The first part f the development process will be to implement an algorithm capable of transforming a music file or string of a partiture into something readable by Unity. Then the game engine will be able to instance the adequate notes at the correct time for the music to play.
 
 When a player starts a level (song) the notes will start showing up accordingly. The correct zone will be located in the left of the screen. If you press the correct key at that time it will give you 100 points. A bit early or a bit late will give the player 60 points, very early or late will give 10.
 
-When a level is completed if the minimum score is reached the player is able to move on to the next. The user will have to repeat the score if the minimum points are not reached.
+When a level is completed, if the minimum score is reached, the player is able to move on to the next one. The user will have to repeat the level if the minimum points are not reached.
 
 ## _Level Design_
 
@@ -125,10 +116,11 @@ The playability of each level will also be based around the same gameplay concep
 
 1. In the main screen, the player will be able to login and start a new game or existing one.
 2. Player/hooded figure will be sat in a drumset, in a cemetery.
-3. Notes will begin to fly accross the screen as music starts, the player must play them
+3. Notes will begin to fly accross the screen as music starts, the player must play them.
 4. The ambient, already surrounded by tombstones, will become more party-intense as the player plays notes.
 5. Skeletons and other monsters will begin to rise from the death and dance and party as the player progresses though the song/score.
-6. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear. Otherwise, a retry pop up will appear.
+6. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear. 
+7. Otherwise, a retry pop up will appear.
 
 _(example)_
 
@@ -230,7 +222,7 @@ _(example)_
 
 The music style will be very varied. Because the game wants to focus on people learning how to play drums, the bigger and more diverse our songs options are, the more will the player have the chance to practice various genres. 
 
-For the sound effects we can add cheering noises for the crowd or booing noises for when the player messes up a few notes, we also require drum sounds that play depending on which key press is detected in the game. The drum sound should be a bit louder than usual so that the player can hear himself play and therefore make improvements on his performance. Any stylistic sounds like the crowd should have a very low volume since we dont want to overwhelm the player with sound.
+For the sound effects we will add cheering noises for the crowd or booing noises for when the player messes up a few notes, we also require drum sounds that play depending on which key press is detected in the game. The drum sound should be a bit louder than usual so that the player can hear himself play and therefore make improvements on his performance. Any stylistic sounds like the crowd should have a very low volume since we dont want to overwhelm the player with sound.
 ### **Sounds Needed**
 
 1. Effects
