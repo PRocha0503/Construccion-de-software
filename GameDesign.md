@@ -115,10 +115,7 @@ The playability of each level will also be based around the same gameplay concep
 
 _Example early development sprites_
 
-<img src="./markdown-images/note2.jpeg" width=100px;/>
-<img src="./markdown-images/note1.jpeg" width=100px;/>
-<img src="./markdown-images/note3.jpeg" width=100px;/>
-<img src="./markdown-images/note4.jpeg" width=100px;/>
+<img src="./markdown-images/note2.jpeg" width=100px;/> <img src="./markdown-images/note1.jpeg" width=100px;/> <img src="./markdown-images/note3.jpeg" width=100px;/> <img src="./markdown-images/note4.jpeg" width=100px;/>
 
 ### **Game Flow**
 
@@ -131,10 +128,12 @@ _Example early development sprites_
 7. Otherwise, a retry pop up will appear.
 
 _Example mockup_
-<img src="./markdown-images/gameplay-mockup.png"/>
+
+<img src="./markdown-images/gameplay-mockup.png" width= 50%/>
 
 _Example main screen from Graveyard Keeper_
-<img src= "https://pbs.twimg.com/media/DaC80i8X0AA3Dby.jpg"/>
+
+<img src= "https://pbs.twimg.com/media/DaC80i8X0AA3Dby.jpg" width=50%/>
 
 ## _Development_
 
@@ -171,7 +170,8 @@ _Example main screen from Graveyard Keeper_
    3. MonsterDancer
 
 _Example from guitar hero_
-<img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2015/02/Guitar-Hero.jpg?w=1280&ssl=1"/>
+
+<img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2015/02/Guitar-Hero.jpg?w=1280&ssl=1" width=50%/>
 
 ## _Graphics_
 
@@ -224,7 +224,8 @@ Visual feedback for hitting a note right (flashes of color, text showing how goo
          10. Sixteenth rest
 
 _Example from crypt of the necrodancer_
-<img src="https://as01.epimg.net/meristation/imagenes/2015/04/20/album/1429483740_483740_000001_album_normal.jpg"/>
+
+<img src="https://as01.epimg.net/meristation/imagenes/2015/04/20/album/1429483740_483740_000001_album_normal.jpg" width=50%/>
 
 ## _Sounds/Music_
 
