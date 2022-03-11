@@ -113,6 +113,13 @@ The playability of each level will also be based around the same gameplay concep
    2. _Interactive_
       1. Music notes made out of bones
 
+_Example early development sprites_
+
+<img src="./markdown-images/note2.jpeg" width=100px;/>
+<img src="./markdown-images/note1.jpeg" width=100px;/>
+<img src="./markdown-images/note3.jpeg" width=100px;/>
+<img src="./markdown-images/note4.jpeg" width=100px;/>
+
 ### **Game Flow**
 
 1. In the main screen, the player will be able to login and start a new game or existing one.
@@ -123,7 +130,11 @@ The playability of each level will also be based around the same gameplay concep
 6. When the song ends, the crowd will cheer and in case of having the required score, a pop up to the next level will appear.
 7. Otherwise, a retry pop up will appear.
 
-_(example)_
+_Example mockup_
+<img src="./markdown-images/gameplay-mockup.png"/>
+
+_Example main screen from Graveyard Keeper_
+<img src= "https://pbs.twimg.com/media/DaC80i8X0AA3Dby.jpg"/>
 
 ## _Development_
 
@@ -134,8 +145,6 @@ _(example)_
 1. Conductor (Used to keep track of the song)
 2. SceneLoader (Used to manage scenes)
 3. MusicPlayer
-
-_(example)_
 
 ### **Derived Classes / Component Compositions**
 
@@ -161,7 +170,8 @@ _(example)_
    2. SlimeDancer
    3. MonsterDancer
 
-_(example)_
+_Example from guitar hero_
+<img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2015/02/Guitar-Hero.jpg?w=1280&ssl=1"/>
 
 ## _Graphics_
 
@@ -213,7 +223,8 @@ Visual feedback for hitting a note right (flashes of color, text showing how goo
          9. Eighth rest
          10. Sixteenth rest
 
-_(example)_
+_Example from crypt of the necrodancer_
+<img src="https://as01.epimg.net/meristation/imagenes/2015/04/20/album/1429483740_483740_000001_album_normal.jpg"/>
 
 ## _Sounds/Music_
 
@@ -285,5 +296,3 @@ This is only a reference, and can change as the project is developed, as the met
    3. mind the pacing, let the player progress at a good curve
 8. design sounds
 9. design music
-
-_(example)_
