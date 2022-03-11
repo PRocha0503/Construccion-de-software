@@ -4,13 +4,15 @@
 
 ---
 
+<img src="https://javier.rodriguez.org.mx/itesm/2014/tecnologico-de-monterrey-blue.png"/>
+
+---
+
 **Pablo Rocha A01028638**
 
 **Miguel Arriaga A01028570**
 
 **Luis Javier Karam Galland A01751941**
-
-##
 
 ## _Index_
 
@@ -19,6 +21,7 @@
 - [ Party of the Drumancer ](#party-of-the-drumancer)
   - [_Game Design Document_](#game-design-document)
   - [_Index_](#index)
+  - [_One Page Document_](#one-page-document)
   - [_Game Design_](#game-design)
     - [**Summary**](#summary)
     - [**Gameplay**](#gameplay)
@@ -41,6 +44,10 @@
     - [**Sounds Needed**](#sounds-needed)
     - [**Music Needed**](#music-needed)
   - [_Schedule_](#schedule)
+
+## _One Page Document_
+
+[Open one page document](/one-page-PAS.pdf)
 
 ## _Game Design_
 
