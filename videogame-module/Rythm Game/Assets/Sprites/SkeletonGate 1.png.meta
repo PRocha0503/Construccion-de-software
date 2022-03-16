@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 77cfab0019b57314b83f28b024ea61cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3554339561621159326
+    second: SkeletonGate 1_0
+  - first:
+      213: -36377339658227692
+    second: SkeletonGate 1_1
+  - first:
+      213: 3616970235702730247
+    second: SkeletonGate 1_2
+  - first:
+      213: -2484433970423676529
+    second: SkeletonGate 1_3
+  - first:
+      213: -5010764870478815576
+    second: SkeletonGate 1_4
+  - first:
+      213: 4082371854643820411
+    second: SkeletonGate 1_5
+  - first:
+      213: 244610891726915319
+    second: SkeletonGate 1_6
+  - first:
+      213: -4722520451986865660
+    second: SkeletonGate 1_7
+  - first:
+      213: 7235569411398473411
+    second: SkeletonGate 1_8
+  - first:
+      213: 4611756787744450263
+    second: SkeletonGate 1_9
+  - first:
+      213: -717719104797915856
+    second: SkeletonGate 1_10
+  - first:
+      213: 918240646415099920
+    second: SkeletonGate 1_11
+  - first:
+      213: -5433715983006318628
+    second: SkeletonGate 1_12
+  - first:
+      213: -8665691073187586189
+    second: SkeletonGate 1_13
+  - first:
+      213: -9021056428349411072
+    second: SkeletonGate 1_14
+  - first:
+      213: 2937000059967084359
+    second: SkeletonGate 1_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 23
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonGate 1_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 102
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dfb85effc835130800000000000000
+      internalID: 3554339561621159326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 98
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4103cc79003ce7ff0800000000000000
+      internalID: -36377339658227692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 95
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ed83e044f023230800000000000000
+      internalID: 3616970235702730247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 96
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81cbfc8774858dd0800000000000000
+      internalID: -2484433970423676529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_4
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 94
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae9a1206ef267ab0800000000000000
+      internalID: -5010764870478815576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 72
+        width: 230
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77f81d829f77a830800000000000000
+      internalID: 4082371854643820411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 90
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6039d5f48056300800000000000000
+      internalID: 244610891726915319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 83
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4024ece7bac367eb0800000000000000
+      internalID: -4722520451986865660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 90
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c696124b08e96460800000000000000
+      internalID: 7235569411398473411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 73
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d621044d50400040800000000000000
+      internalID: 4611756787744450263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_10
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 73
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035420ed6462a06f0800000000000000
+      internalID: -717719104797915856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 38
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018a5ebb00f3ebc00800000000000000
+      internalID: 918240646415099920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 27
+        width: 172
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfbb8e3a109794b0800000000000000
+      internalID: -5433715983006318628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 32
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f5169b1e74db780800000000000000
+      internalID: -8665691073187586189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 48
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001ba7959f4cec280800000000000000
+      internalID: -9021056428349411072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonGate 1_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 48
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74793af5ef152c820800000000000000
+      internalID: 2937000059967084359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SkeletonGate 1_5: 4082371854643820411
+      SkeletonGate 1_6: 244610891726915319
+      SkeletonGate 1_1: -36377339658227692
+      SkeletonGate 1_14: -9021056428349411072
+      SkeletonGate 1_13: -8665691073187586189
+      SkeletonGate 1_9: 4611756787744450263
+      SkeletonGate 1_7: -4722520451986865660
+      SkeletonGate 1_10: -717719104797915856
+      SkeletonGate 1_12: -5433715983006318628
+      SkeletonGate 1_2: 3616970235702730247
+      SkeletonGate 1_0: 3554339561621159326
+      SkeletonGate 1_8: 7235569411398473411
+      SkeletonGate 1_4: -5010764870478815576
+      SkeletonGate 1_3: -2484433970423676529
+      SkeletonGate 1_15: 2937000059967084359
+      SkeletonGate 1_11: 918240646415099920
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
