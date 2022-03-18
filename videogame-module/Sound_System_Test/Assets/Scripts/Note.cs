@@ -6,6 +6,7 @@ public class Note : MonoBehaviour
 {
     double timeInstantiated;
     public float assignedTime;
+    public Sprite[] spriteArray;
     void Start()
     {
         timeInstantiated = SongManager.GetAudioSourceTime();
@@ -25,7 +26,6 @@ public class Note : MonoBehaviour
         else
         {
             transform.localPosition = Vector3.Lerp(Vector3.right * SongManager.Instance.noteSpawnX, Vector3.right * SongManager.Instance.noteDespawnX, t);
-
             GetComponent<SpriteRenderer>().enabled = true;
         }
     }

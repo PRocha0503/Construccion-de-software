@@ -7,16 +7,21 @@ using UnityEngine;
 public class Lane : MonoBehaviour
 {
     public Melanchall.DryWetMidi.MusicTheory.NoteName noteRestriction;
-    // public int noteRestriction;
     public KeyCode input;
     public GameObject notePrefab;
     List<Note> notes = new List<Note>();
     public List<double> timeStamps = new List<double>();
-
+    public List<Melanchall.DryWetMidi.Interaction.MusicalTimeSpan> noteTimes = new List<Melanchall.DryWetMidi.Interaction.MusicalTimeSpan>();
     int spawnIndex = 0;
     int inputIndex = 0;
-    // List<Melanchall.DryWetMidi.MusicTheory.NoteName> testArray = new List<Melanchall.DryWetMidi.MusicTheory.NoteName>();
-    // Start is called before the first frame update
+
+    //Note Types by length
+    Melanchall.DryWetMidi.Interaction.MusicalTimeSpan sixteenth_note=new MusicalTimeSpan(1,16,true);
+    Melanchall.DryWetMidi.Interaction.MusicalTimeSpan eighth_note=new MusicalTimeSpan(1,8,true);
+    Melanchall.DryWetMidi.Interaction.MusicalTimeSpan quarter_note=new MusicalTimeSpan(1,4,true);
+    Melanchall.DryWetMidi.Interaction.MusicalTimeSpan half_note=new MusicalTimeSpan(1,2,true);
+    Melanchall.DryWetMidi.Interaction.MusicalTimeSpan whole_note=new MusicalTimeSpan(1,1,true);
+
     void Start()
     {
         
@@ -25,15 +30,16 @@ public class Lane : MonoBehaviour
     {
         foreach (var note in array)
         {
-            // int noteNumber=Melanchall.DryWetMidi.MusicTheory.NoteUtilities.GetNoteNumber(note.NoteName,3);
-            // if (!testArray.Contains(note.NoteName)){
-            //     testArray.Add(note.NoteName);
-            //     Debug.Log(noteNumber + " " +note.NoteName);
-            // }
             if (note.NoteName==noteRestriction)
             {
-                var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(note.Time, SongManager.midiFile.GetTempoMap());
+                var tempoMap=SongManager.midiFile.GetTempoMap();
+                
+                var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(note.Time, tempoMap);
                 timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
+
+                //Append the musical length of each note to the musicalLength list
+                var musicalLength = note.LengthAs<MusicalTimeSpan>(tempoMap);
+                noteTimes.Add(musicalLength);
             }
         }
     }
@@ -44,8 +50,29 @@ public class Lane : MonoBehaviour
         {
             
             if (SongManager.GetAudioSourceTime() >= timeStamps[spawnIndex] - SongManager.Instance.noteTime)
-            {
+            {   
+                var noteLength=noteTimes[spawnIndex];
                 var note = Instantiate(notePrefab, transform);
+
+                // Decide what to do depending on note length
+                // note.GetComponent<SpriteRenderer>().color=Color.clear;
+                if (noteLength==whole_note){
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[0];
+                }
+                else if (noteLength==half_note){
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[1];
+                }
+                else if (noteLength==quarter_note){
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[3];
+                }
+                else if (noteLength==eighth_note){
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[5];
+                }
+                else if (noteLength==sixteenth_note){
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[7];
+                }
+                
+
                 notes.Add(note.GetComponent<Note>());
                 note.GetComponent<Note>().assignedTime = (float)timeStamps[spawnIndex];
                 spawnIndex++;
