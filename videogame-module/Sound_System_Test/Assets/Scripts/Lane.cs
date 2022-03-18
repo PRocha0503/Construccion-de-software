@@ -55,7 +55,6 @@ public class Lane : MonoBehaviour
                 var note = Instantiate(notePrefab, transform);
 
                 // Decide what to do depending on note length
-                // note.GetComponent<SpriteRenderer>().color=Color.clear;
                 if (noteLength==whole_note){
                     note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[0];
                 }
