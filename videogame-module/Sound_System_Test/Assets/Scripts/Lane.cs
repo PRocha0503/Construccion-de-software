@@ -70,6 +70,9 @@ public class Lane : MonoBehaviour
                 else if (noteLength==sixteenth_note){
                     note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[7];
                 }
+                else{
+                    note.GetComponent<SpriteRenderer>().color=Color.black;
+                }
                 
 
                 notes.Add(note.GetComponent<Note>());
