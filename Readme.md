@@ -36,6 +36,11 @@ Github repository for the "TC2005B Construcción de software y toma de decisione
 > - project - Final project
 > - db-module - Database module
 > - web-module - Web module
-> - videogame-moduule - Videogames module
+> - videogame-module - Videogames module
+> - software-engineering-module - Software Engineering module
 
 ## Resources (Documentation and other links)
+
+> - SCRUM meetings documentation - https://www.notion.so/Documentaci-n-Party-of-the-drumancer-0273914c292549298ddc3217197c1b4c
+> - SCRUM board - https://trello.com/b/UmyvtmKg
+> - Use cases UML diagram - https://drive.google.com/file/d/1fw1fh4GsFW3W6OVMM372a9XNNlQvyU_8/view?usp=sharing
