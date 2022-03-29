@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 68da309aba80a864182795f03251ef59
+guid: 3df20fdad746bb242b9f3c1be976dee8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3127448798928283936
-    second: whole_note
+      213: -5991750515594926717
+    second: note Spritesheet_0
   - first:
-      213: -1649669319220892291
-    second: half_note1
+      213: -2644293114841070438
+    second: note Spritesheet_1
   - first:
-      213: 8794293679310905712
-    second: quarter_note1
+      213: -6821150278369501217
+    second: note Spritesheet_2
   - first:
-      213: 9041627313079446052
-    second: eighth_note1
+      213: 536831757413986486
+    second: note Spritesheet_3
   - first:
-      213: -243938744375676594
-    second: sixteenth_note1
+      213: 2608580588286453916
+    second: note Spritesheet_4
   - first:
-      213: 2163783347542741529
-    second: half_note2
+      213: -7396101498922050595
+    second: note Spritesheet_5
   - first:
-      213: -6684350046975734806
-    second: quarter_note2
+      213: 246396264040320979
+    second: note Spritesheet_6
   - first:
-      213: -3433716947577749884
-    second: eighth_note2
+      213: -258226110251658991
+    second: note Spritesheet_7
   - first:
-      213: -8067896643019097731
-    second: sixteenth_note2
+      213: 1884649332963642890
+    second: note Spritesheet_8
   - first:
-      213: 1858307051623101537
-    second: notes_9
+      213: -8197342617704726768
+    second: note Spritesheet_9
   - first:
-      213: -4885638397862746055
-    second: notes_10
+      213: -4545936719739547951
+    second: note Spritesheet_10
   - first:
-      213: 3863193727544401831
-    second: notes_11
+      213: 1250605038151132444
+    second: note Spritesheet_11
   - first:
-      213: -1086997201143308891
-    second: notes_12
+      213: -6479632506968907020
+    second: note Spritesheet_12
   - first:
-      213: -1353451960534188622
-    second: notes_13
+      213: -2206267374961527798
+    second: note Spritesheet_13
   - first:
-      213: 1183647154687025153
-    second: notes_14
+      213: -7751753060508348025
+    second: note Spritesheet_14
   - first:
-      213: 1572887684306367966
-    second: notes_15
+      213: 1343596861288032530
+    second: note Spritesheet_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -80,7 +80,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -94,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,7 +116,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,7 +128,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,7 +140,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,337 +151,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: whole_note
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 118
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e658a623e11994d0800000000000000
-      internalID: -3127448798928283936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: half_note1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 117
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7d6af69e723b19e0800000000000000
-      internalID: -1649669319220892291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: quarter_note1
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 117
-        width: 14
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0712ac5d18b9b0a70800000000000000
-      internalID: 8794293679310905712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: eighth_note1
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 117
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42ae19bf2205a7d70800000000000000
-      internalID: 9041627313079446052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sixteenth_note1
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 117
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e417882210b5d9cf0800000000000000
-      internalID: -243938744375676594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: half_note2
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 91
-        width: 13
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 912d0398d7d470e10800000000000000
-      internalID: 2163783347542741529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: quarter_note2
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 91
-        width: 14
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeb45a72c0b6c33a0800000000000000
-      internalID: -6684350046975734806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: eighth_note2
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 90
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48eb368f0acf850d0800000000000000
-      internalID: -3433716947577749884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sixteenth_note2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 90
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d79b74cafb2190090800000000000000
-      internalID: -8067896643019097731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: notes_9
+      name: note Spritesheet_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 53
+        y: 118
         width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164399fea680ac910800000000000000
-      internalID: 1858307051623101537
+      spriteID: 3856337d6a609dca0800000000000000
+      internalID: -5991750515594926717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: notes_10
+      name: note Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 53
+        x: 37
+        y: 118
         width: 11
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 938e16a23c9b23cb0800000000000000
-      internalID: -4885638397862746055
+      spriteID: a9403ef0c659d4bd0800000000000000
+      internalID: -2644293114841070438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: notes_11
+      name: note Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 118
+        width: 11
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf9a3a36f76651a0800000000000000
+      internalID: -6821150278369501217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 118
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b03fcc93a5337700800000000000000
+      internalID: 536831757413986486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 118
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c982bc4693a833420800000000000000
+      internalID: 2608580588286453916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 91
+        width: 11
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb540a7fd4cb5990800000000000000
+      internalID: -7396101498922050595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 91
+        width: 11
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df4b10c8106b6300800000000000000
+      internalID: 246396264040320979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 91
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11118ba88b89a6cf0800000000000000
+      internalID: -258226110251658991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 91
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e8971459e972a10800000000000000
+      internalID: 1884649332963642890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 54
+        width: 9
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ff98112503d3e80800000000000000
+      internalID: -8197342617704726768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 54
+        width: 9
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de058883a699e0c0800000000000000
+      internalID: -4545936719739547951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note Spritesheet_11
       rect:
         serializedVersion: 2
         x: 71
-        y: 53
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 54
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7af1dc42a32dc9530800000000000000
-      internalID: 3863193727544401831
+      spriteID: c15ef4df7aa0b5110800000000000000
+      internalID: 1250605038151132444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: notes_12
+      name: note Spritesheet_12
       rect:
         serializedVersion: 2
         x: 103
-        y: 53
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 54
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ad52020ec53ae0f0800000000000000
-      internalID: -1086997201143308891
+      spriteID: 4f26b03c098b316a0800000000000000
+      internalID: -6479632506968907020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: notes_13
+      name: note Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 38
-        y: 25
-        width: 11
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 39
+        y: 26
+        width: 9
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bdbdcfdc92973de0800000000000000
-      internalID: -1353451960534188622
+      spriteID: a0472e30383c161e0800000000000000
+      internalID: -2206267374961527798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: notes_14
+      name: note Spritesheet_14
       rect:
         serializedVersion: 2
         x: 71
-        y: 25
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 26
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 100a582e0d82d6010800000000000000
-      internalID: 1183647154687025153
+      spriteID: 7815ad979ad3c6490800000000000000
+      internalID: -7751753060508348025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: notes_15
+      name: note Spritesheet_15
       rect:
         serializedVersion: 2
         x: 103
-        y: 25
-        width: 15
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 26
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed5faaee30504d510800000000000000
-      internalID: 1572887684306367966
+      spriteID: 21927660a3a65a210800000000000000
+      internalID: 1343596861288032530
       vertices: []
       indices: 
       edges: []
