@@ -62,13 +62,13 @@ public class Lane : MonoBehaviour
                     note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[1];
                 }
                 else if (noteLength==quarter_note){
-                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[3];
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[2];
                 }
                 else if (noteLength==eighth_note){
-                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[5];
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[3];
                 }
                 else if (noteLength==sixteenth_note){
-                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[7];
+                    note.GetComponent<SpriteRenderer>().sprite=note.GetComponent<Note>().spriteArray[4];
                 }
                 else{
                     note.GetComponent<SpriteRenderer>().color=Color.black;
