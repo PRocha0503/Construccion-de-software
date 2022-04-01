@@ -112,10 +112,11 @@ public class Lane : MonoBehaviour
     }
     private void Hit()
     {
-        ScoreManager.Hit();
+        // TODO Add to canvas score
+        
     }
     private void Miss()
     {
-        ScoreManager.Miss();
+        // TODO Remove to canvas score
     }
 }
