@@ -125,7 +125,7 @@ public class SongManager : MonoBehaviour
 
     public void UpdateLights()
     {
-        var lights = FindObjectsOfType<LightPulse>();
+        /*var lights = FindObjectsOfType<LightPulse>();
         var flames = FindObjectsOfType<FlameAnim>();
         
         if (currentScore == lightSwitch[0])
@@ -160,6 +160,6 @@ public class SongManager : MonoBehaviour
             {
                 flame.ChangeAnimation("Blue");
             }
-        }
+        }*/
     }
 }
