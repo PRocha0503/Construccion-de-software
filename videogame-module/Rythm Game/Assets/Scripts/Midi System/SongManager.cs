@@ -6,9 +6,12 @@ using Melanchall.DryWetMidi.Interaction;
 using System.IO;
 using UnityEngine.Networking;
 using System;
+using TMPro;
 
 public class SongManager : MonoBehaviour
 {
+    // Midi Stuff
+    [Header("Midi Settings")]
     public static SongManager Instance;
     public AudioSource audioSource;
     public Lane[] lanes;
@@ -26,6 +29,16 @@ public class SongManager : MonoBehaviour
             return noteTapX - (noteSpawnX - noteTapX);
         }
     }
+    
+    [Header("Score Settings")]
+    [SerializeField] private int currentScore;
+    [SerializeField] private int scorePerNote;
+
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI multiplierText;
+    
+    [Header("Lights settings (1st, 2nd, 3rd phase)")]
+    [SerializeField] private int[] lightSwitch = {0, 300, 600};
 
     public static MidiFile midiFile;
     // Start is called before the first frame update
@@ -88,8 +101,65 @@ public class SongManager : MonoBehaviour
         return (double)Instance.audioSource.timeSamples / Instance.audioSource.clip.frequency;
     }
 
-    void Update()
+    public void AddScore()
     {
+        currentScore += scorePerNote;
+        scoreText.text = "Score: " + currentScore;
+    }
+
+    public void SubstractScore()
+    {
+        if (currentScore > 0)
+        {
+            currentScore -= scorePerNote;
+            scoreText.text = "Score: " + currentScore;
+        }
+        else
+        {
+            currentScore -= 0;
+            scoreText.text = "Score: " + currentScore;
+        }
+
+    }
+
+
+    public void UpdateLights()
+    {
+        var lights = FindObjectsOfType<LightPulse>();
+        var flames = FindObjectsOfType<FlameAnim>();
         
+        if (currentScore == lightSwitch[0])
+        {
+            foreach (LightPulse light in lights)
+            {
+                light.ChangeColor("Red");
+            }
+            foreach (FlameAnim flame in flames)
+            {
+                flame.ChangeAnimation("Red");
+            }
+        }
+        else if (currentScore == lightSwitch[1])
+        {
+            foreach (LightPulse light in lights)
+            {
+                light.ChangeColor("Yellow");
+            }
+            foreach (FlameAnim flame in flames)
+            {
+                flame.ChangeAnimation("Yellow");
+            }
+        }
+        else if (currentScore == lightSwitch[2])
+        {
+            foreach (LightPulse light in lights)
+            {
+                light.ChangeColor("Blue");
+            }
+            foreach (FlameAnim flame in flames)
+            {
+                flame.ChangeAnimation("Blue");
+            }
+        }
     }
 }

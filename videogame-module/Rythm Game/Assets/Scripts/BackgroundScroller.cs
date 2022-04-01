@@ -22,3 +22,4 @@ public class BackgroundScroller : MonoBehaviour
         myMaterial.mainTextureOffset += offSet * Time.deltaTime;
     }
 }
+    

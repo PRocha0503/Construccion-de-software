@@ -14,6 +14,7 @@ public class Lane : MonoBehaviour
     public List<Melanchall.DryWetMidi.Interaction.MusicalTimeSpan> noteTimes = new List<Melanchall.DryWetMidi.Interaction.MusicalTimeSpan>();
     int spawnIndex = 0;
     int inputIndex = 0;
+    private SongManager _songManager;
 
     //Note Types by length
     Melanchall.DryWetMidi.Interaction.MusicalTimeSpan sixteenth_note=new MusicalTimeSpan(1,16,true);
@@ -24,7 +25,7 @@ public class Lane : MonoBehaviour
 
     void Start()
     {
-        
+        _songManager = FindObjectOfType<SongManager>();
     }
     public void SetTimeStamps(Melanchall.DryWetMidi.Interaction.Note[] array)
     {
@@ -112,11 +113,12 @@ public class Lane : MonoBehaviour
     }
     private void Hit()
     {
-        // TODO Add to canvas score
-        
+        _songManager.AddScore();
+        _songManager.UpdateLights();
     }
     private void Miss()
     {
-        // TODO Remove to canvas score
+        _songManager.SubstractScore();
+        _songManager.UpdateLights();
     }
 }
