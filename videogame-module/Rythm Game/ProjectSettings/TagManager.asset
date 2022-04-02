@@ -48,8 +48,14 @@ TagManager:
   - name: Background
     uniqueID: 2747401167
     locked: 0
+  - name: Stage
+    uniqueID: 2320201339
+    locked: 0
   - name: Props
     uniqueID: 574112227
+    locked: 0
+  - name: Lights
+    uniqueID: 460753015
     locked: 0
   - name: Gameplay Elements
     uniqueID: 462702141

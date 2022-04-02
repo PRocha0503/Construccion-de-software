@@ -36,14 +36,17 @@ public class SongManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI multiplierText;
-    
-    [Header("Lights settings (1st, 2nd, 3rd phase)")]
-    [SerializeField] private int[] lightSwitch = {0, 300, 600};
+
+    [Header("Multiplier Settings")] 
+    [SerializeField] private int currentMultiplier;
+    [SerializeField] private int multiplierTracker;
+    [SerializeField] private int[] multiplierThresholds;
 
     public static MidiFile midiFile;
     // Start is called before the first frame update
     void Start()
     {
+        currentMultiplier = 1; 
         Instance = this;
         if (Application.streamingAssetsPath.StartsWith("http://") || Application.streamingAssetsPath.StartsWith("https://"))
         {
@@ -103,8 +106,28 @@ public class SongManager : MonoBehaviour
 
     public void AddScore()
     {
-        currentScore += scorePerNote;
+        multiplierTracker++;
+        if (currentMultiplier - 1 < multiplierThresholds.Length)
+        {
+            multiplierTracker++;
+            if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker)
+            {
+                multiplierTracker = 0;
+                currentMultiplier++;
+            }
+            
+        }
+
+        multiplierText.text = "Multiplier: x" + currentMultiplier;
+        
+        currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
+
+        var lightPillars = FindObjectsOfType<LightPillar>();
+        foreach (var lightPillar in lightPillars)
+        {
+            lightPillar.UpdateLights(currentMultiplier);
+        }
     }
 
     public void SubstractScore()
@@ -120,6 +143,15 @@ public class SongManager : MonoBehaviour
             scoreText.text = "Score: " + currentScore;
         }
 
+        currentMultiplier = 1;
+        multiplierTracker = 0;
+
+        multiplierText.text = "Multiplier: x" + currentMultiplier;
+        var lightPillars = FindObjectsOfType<LightPillar>();
+        foreach (var lightPillar in lightPillars)
+        {
+            lightPillar.UpdateLights(currentMultiplier);
+        }
     }
 
 
