@@ -42,24 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Sky
-    uniqueID: 4061314767
-    locked: 0
-  - name: Background
-    uniqueID: 2747401167
-    locked: 0
-  - name: Stage
-    uniqueID: 2320201339
-    locked: 0
-  - name: Props
-    uniqueID: 574112227
-    locked: 0
-  - name: Lights
-    uniqueID: 460753015
-    locked: 0
-  - name: Gameplay Elements
-    uniqueID: 462702141
-    locked: 0
-  - name: Notes
-    uniqueID: 3661668985
+  - name: Lit
+    uniqueID: 1473901329
     locked: 0

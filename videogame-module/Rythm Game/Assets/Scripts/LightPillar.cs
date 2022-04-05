@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class LightPillar : MonoBehaviour
 {
-    [SerializeField] private Animator light;
+    [SerializeField] private new Animator light;
     [SerializeField] private Animator flame;
 
 

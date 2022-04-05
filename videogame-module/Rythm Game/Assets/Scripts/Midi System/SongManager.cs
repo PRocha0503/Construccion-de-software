@@ -42,6 +42,9 @@ public class SongManager : MonoBehaviour
     [SerializeField] private int multiplierTracker;
     [SerializeField] private int[] multiplierThresholds;
 
+    [Header("Multiplier Settings")] 
+    [SerializeField] private int barBonus;
+
     public static MidiFile midiFile;
     // Start is called before the first frame update
     void Start()
@@ -106,6 +109,7 @@ public class SongManager : MonoBehaviour
 
     public void AddScore()
     {
+        ProgressBar.Instance.AddHealth(barBonus);
         multiplierTracker++;
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
@@ -118,7 +122,7 @@ public class SongManager : MonoBehaviour
             
         }
 
-        multiplierText.text = "Multiplier: x" + currentMultiplier;
+        multiplierText.text = "x" + currentMultiplier;
         
         currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
@@ -140,13 +144,13 @@ public class SongManager : MonoBehaviour
         else
         {
             currentScore -= 0;
-            scoreText.text = "Score: " + currentScore;
+                scoreText.text = "Score: " + currentScore;
         }
 
         currentMultiplier = 1;
         multiplierTracker = 0;
 
-        multiplierText.text = "Multiplier: x" + currentMultiplier;
+        multiplierText.text = "x" + currentMultiplier;
         var lightPillars = FindObjectsOfType<LightPillar>();
         foreach (var lightPillar in lightPillars)
         {
