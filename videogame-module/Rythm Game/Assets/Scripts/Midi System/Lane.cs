@@ -99,7 +99,7 @@ public class Lane : MonoBehaviour
                 }
                 else
                 {
-                    // print($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timeStamp)} delay");
+                    // Miss();  //Substracts score if button pressed at wrong time
                 }
             }
             if (timeStamp + marginOfError <= audioTime)
