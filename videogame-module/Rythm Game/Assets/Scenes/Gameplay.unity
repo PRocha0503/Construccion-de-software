@@ -391,7 +391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 16.166851, y: 0.15228999}
+  m_AnchoredPosition: {x: 16.45, y: 0.27369}
   m_SizeDelta: {x: 2.1124, y: 0.8928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107114579
@@ -416,8 +416,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: xx
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4367589ae706c1449a9ee2288461b997, type: 2}
+  m_sharedMaterial: {fileID: -4722295603603148954, guid: 4367589ae706c1449a9ee2288461b997, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4476,8 +4476,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4367589ae706c1449a9ee2288461b997, type: 2}
+  m_sharedMaterial: {fileID: -4722295603603148954, guid: 4367589ae706c1449a9ee2288461b997, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27761,7 +27761,7 @@ PrefabInstance:
     - target: {fileID: 1832083099, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: ab5eb0c1e1d35c4428ee38bf3795ec07, type: 3}
+      objectReference: {fileID: 8300000, guid: 9f7d1504d90ced74fab0bd72d1a6e8fd, type: 3}
     - target: {fileID: 1113258260985781194, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: m_Name
       value: SongManager
@@ -27820,7 +27820,7 @@ PrefabInstance:
       objectReference: {fileID: 1084848886}
     - target: {fileID: 3949007823646089577, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: fileLocation
-      value: Bach__Invention_No_13.mid
+      value: ClintEastwood.mid
       objectReference: {fileID: 0}
     - target: {fileID: 3949007823646089577, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: scorePerNote
