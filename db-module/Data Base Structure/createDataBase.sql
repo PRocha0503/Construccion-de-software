@@ -1,0 +1,33 @@
+DROP SCHEMA IF EXISTS PAS_drummancer;
+CREATE SCHEMA PAS_drummancer;
+USE PAS_drummancer;
+
+CREATE TABLE `user` (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    class VARCHAR(20) NOT NULL,
+    username VARCHAR(20) NOT NULL,
+    pwd VARCHAR(20) NOT NULL,
+    levels_unlocked INT NOT NULL,
+    PRIMARY KEY (id),
+    INDEX idx_class (class)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE level (
+    level_number SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    difficulty SMALLINT NOT NULL,
+    total_number_of_notes SMALLINT NOT NULL,
+    max_possible_score INT NOT NULL,
+    PRIMARY KEY  (level_number)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE game (
+    game_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    user_id INT UNSIGNED NOT NULL,
+    level_id SMALLINT UNSIGNED NOT NULL,
+    score INT NOT NULL,
+    correct_number_of_notes SMALLINT NOT NULL,
+    date_played TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY  (game_id),
+    FOREIGN KEY(user_id) REFERENCES user(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+   FOREIGN KEY(level_id) REFERENCES level(level_number) ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
