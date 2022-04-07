@@ -21,7 +21,18 @@ const getUser = async (req, res) => {
 	}
 };
 
+const addUser = async (req, res) => {
+	try {
+		const newUser = User.create({ ...req.body });
+		res.send(200, { msg: `${newUser.username} was added` });
+	} catch (e) {
+		res.send(500, { msg: "Could not add user" });
+		console.log(e);
+	}
+};
+
 router.get("/", getAllUsers);
 router.get("/single", getUser);
+router.post("/", addUser);
 
 module.exports = router;
