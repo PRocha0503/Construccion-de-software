@@ -114,11 +114,11 @@ public class Lane : MonoBehaviour
     private void Hit()
     {
         _songManager.AddScore();
-        _songManager.UpdateLights();
+        // _songManager.UpdateLights();
     }
     private void Miss()
     {
         _songManager.SubstractScore();
-        _songManager.UpdateLights();
+        // _songManager.UpdateLights();
     }
 }

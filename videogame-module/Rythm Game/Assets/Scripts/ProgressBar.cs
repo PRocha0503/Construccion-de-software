@@ -8,7 +8,7 @@ public class ProgressBar : MonoBehaviour
 {
 
     public static ProgressBar Instance; 
-    [SerializeField] private Slider slider;
+    [SerializeField] public Slider slider;
     [SerializeField] private float emptySpeed = .1f;
 
     public void SetHealth(int health)
