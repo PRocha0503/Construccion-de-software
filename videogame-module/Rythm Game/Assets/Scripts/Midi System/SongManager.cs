@@ -33,7 +33,6 @@ public class SongManager : MonoBehaviour
     [Header("Score Settings")]
     [SerializeField] private int currentScore;
     [SerializeField] private int scorePerNote;
-
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI multiplierText;
 
@@ -45,6 +44,12 @@ public class SongManager : MonoBehaviour
     [Header("Multiplier Settings")] 
     [SerializeField] private int barBonus;
 
+    [Header("Endgame Conditions Settings")]
+    [SerializeField] private int timeToWaitAfterWin;
+    [SerializeField] private ProgressBar progressBar;
+    public SceneChanger sceneManager;
+    public string sceneAfterWin; 
+    public string sceneAfterLoose; 
     public static MidiFile midiFile;
     // Start is called before the first frame update
     void Start()
@@ -61,6 +66,27 @@ public class SongManager : MonoBehaviour
         }
     }
 
+    void Update(){
+        //Check if the song has ended -> the game has been won
+        if (!audioSource.isPlaying){
+            levelWon();
+        }
+        if (progressBar.slider.value<=0){
+            levelLost();
+        }
+    }
+
+    void levelWon(){
+        StartCoroutine(waitTime(timeToWaitAfterWin, sceneAfterWin));
+    }
+    void levelLost(){
+        StartCoroutine(waitTime(0, sceneAfterLoose));
+    }
+
+    IEnumerator waitTime(int timeToWait, string scene){
+        yield return new WaitForSeconds(timeToWait);
+        sceneManager.GoToScene(scene);
+    }
     private IEnumerator ReadFromWebsite()
     {
         using (UnityWebRequest www = UnityWebRequest.Get(Application.streamingAssetsPath + "/" + fileLocation))
@@ -156,46 +182,5 @@ public class SongManager : MonoBehaviour
         {
             lightPillar.UpdateLights(currentMultiplier);
         }
-    }
-
-
-    public void UpdateLights()
-    {
-        /*var lights = FindObjectsOfType<LightPulse>();
-        var flames = FindObjectsOfType<FlameAnim>();
-        
-        if (currentScore == lightSwitch[0])
-        {
-            foreach (LightPulse light in lights)
-            {
-                light.ChangeColor("Red");
-            }
-            foreach (FlameAnim flame in flames)
-            {
-                flame.ChangeAnimation("Red");
-            }
-        }
-        else if (currentScore == lightSwitch[1])
-        {
-            foreach (LightPulse light in lights)
-            {
-                light.ChangeColor("Yellow");
-            }
-            foreach (FlameAnim flame in flames)
-            {
-                flame.ChangeAnimation("Yellow");
-            }
-        }
-        else if (currentScore == lightSwitch[2])
-        {
-            foreach (LightPulse light in lights)
-            {
-                light.ChangeColor("Blue");
-            }
-            foreach (FlameAnim flame in flames)
-            {
-                flame.ChangeAnimation("Blue");
-            }
-        }*/
     }
 }
