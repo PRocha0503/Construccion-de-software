@@ -1,4 +1,6 @@
 /*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+05/04/2022
 Script to change between scenes
 */
 
