@@ -8,6 +8,7 @@ class Server {
 		this.port = process.env.PORT;
 		this.usersPath = "/api/user";
 		this.gamePath = "/api/game";
+		this.levelPath = "/api/level";
 		this.dbConnection();
 		this.middlewares();
 		this.routes();
@@ -33,6 +34,7 @@ class Server {
 	routes() {
 		this.app.use(this.usersPath, require("../routes/user"));
 		this.app.use(this.gamePath, require("../routes/game"));
+		this.app.use(this.levelPath, require("../routes/level"));
 	}
 
 	listen() {
