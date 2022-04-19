@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Script forked from: https://github.com/SkyanSam/RhythmGameTutorialProject
+Modified by: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+From this song manager the lanes, song and its atributes are defined and instanciated. It also includes score and audiosource settings. 
+This scripts reads and parses the MIDI file using the Melanchall.DryWetMidi library
+05/04/2022
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Melanchall.DryWetMidi.Core;

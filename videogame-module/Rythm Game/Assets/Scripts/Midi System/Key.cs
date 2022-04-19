@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+Manages the sprite and input of each key
+05/04/2022
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
