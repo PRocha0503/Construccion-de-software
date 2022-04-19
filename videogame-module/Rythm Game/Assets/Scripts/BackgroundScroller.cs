@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+Makes the nightsky background scroll for a cool effect
+05/04/2022
+*/
 using System;
 using System.Collections;
 using System.Collections.Generic;

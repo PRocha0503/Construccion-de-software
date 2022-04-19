@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+Changes the colors of the keys on button press
+05/04/2022
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

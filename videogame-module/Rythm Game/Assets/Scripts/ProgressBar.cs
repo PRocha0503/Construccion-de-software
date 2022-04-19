@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+The progress bar game component that indicates game state
+05/04/2022
+*/
 using System;
 using System.Collections;
 using System.Collections.Generic;

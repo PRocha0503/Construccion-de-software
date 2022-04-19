@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+Script forked from: https://github.com/SkyanSam/RhythmGameTutorialProject
+Modified by: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+This note class corresponds to each of the notes of each lane, te note gameojects are destroyed from this script
+05/04/2022
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

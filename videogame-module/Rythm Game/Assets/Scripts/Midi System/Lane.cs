@@ -1,4 +1,12 @@
-﻿using Melanchall.DryWetMidi.Interaction;
+﻿/*
+Script forked from: https://github.com/SkyanSam/RhythmGameTutorialProject
+Modified by: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+This lane class instances the timestamps for each note and arranges the notes that go in each lane  
+05/04/2022
+*/
+
+
+using Melanchall.DryWetMidi.Interaction;
 using System;
 using System.Collections;
 using System.Collections.Generic;
