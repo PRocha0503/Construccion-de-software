@@ -11,22 +11,7 @@ public class LightPillar : MonoBehaviour
 
     public void UpdateLights(int currentMultiplier)
     {
-        if (currentMultiplier == 1)
-        {
-            light.SetInteger("Multiplier", 1);
-            flame.SetInteger("Multiplier", 1);
-        }
-        if (currentMultiplier == 2)
-        {
-            light.SetInteger("Multiplier", 2);
-            flame.SetInteger("Multiplier", 2);
-        }
-
-        if (currentMultiplier == 3)
-        {
-            light.SetInteger("Multiplier",3);
-            flame.SetInteger("Multiplier", 3);
-        }
-
+        light.SetInteger("Multiplier", currentMultiplier);
+        flame.SetInteger("Multiplier", currentMultiplier);
     }
 }

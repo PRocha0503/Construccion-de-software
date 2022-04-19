@@ -47,7 +47,7 @@ public class SongManager : MonoBehaviour
     [Header("Endgame Conditions Settings")]
     [SerializeField] private int timeToWaitAfterWin;
     [SerializeField] private ProgressBar progressBar;
-    public SceneChanger sceneManager;
+    public SceneChanger levelLoader;
     public string sceneAfterWin; 
     public string sceneAfterLoose; 
     public static MidiFile midiFile;
@@ -85,7 +85,7 @@ public class SongManager : MonoBehaviour
 
     IEnumerator waitTime(int timeToWait, string scene){
         yield return new WaitForSeconds(timeToWait);
-        sceneManager.GoToScene(scene);
+        levelLoader.GoToScene(scene);
     }
     private IEnumerator ReadFromWebsite()
     {
