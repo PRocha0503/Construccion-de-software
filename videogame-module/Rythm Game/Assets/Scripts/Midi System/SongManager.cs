@@ -84,9 +84,11 @@ public class SongManager : MonoBehaviour
     }
 
     void levelWon(){
+        //Change screens if the level is won
         StartCoroutine(waitTime(timeToWaitAfterWin, sceneAfterWin));
     }
     void levelLost(){
+        //Change screens if the level is lost
         StartCoroutine(waitTime(0, sceneAfterLoose));
     }
 
@@ -96,6 +98,7 @@ public class SongManager : MonoBehaviour
     }
     private IEnumerator ReadFromWebsite()
     {
+        //Read midi file from website
         using (UnityWebRequest www = UnityWebRequest.Get(Application.streamingAssetsPath + "/" + fileLocation))
         {
             yield return www.SendWebRequest();
@@ -118,11 +121,13 @@ public class SongManager : MonoBehaviour
 
     private void ReadFromFile()
     {
+        //Read midi file from path
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
     }
     public void GetDataFromMidi()
     {
+        //Get the notes from the midi files
         var notes = midiFile.GetNotes();
         var array = new Melanchall.DryWetMidi.Interaction.Note[notes.Count];
         notes.CopyTo(array, 0);
@@ -142,6 +147,7 @@ public class SongManager : MonoBehaviour
 
     public void AddScore()
     {
+        //Increase the score
         ProgressBar.Instance.AddHealth(barBonus);
         ProgressBar.Instance.StartDecreasing();
         

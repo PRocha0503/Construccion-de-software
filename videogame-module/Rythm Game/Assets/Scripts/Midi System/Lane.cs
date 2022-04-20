@@ -42,6 +42,8 @@ public class Lane : MonoBehaviour
             if (note.NoteName==noteRestriction)
             {
                 var tempoMap=SongManager.midiFile.GetTempoMap();
+
+                //Add timestamps to the song map
                 
                 var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(note.Time, tempoMap);
                 timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
@@ -98,8 +100,10 @@ public class Lane : MonoBehaviour
 
             if (Input.GetKeyDown(input))
             {
+                //Check if the user presses the key at the correct time
                 if (Math.Abs(audioTime - timeStamp) < marginOfError)
                 {
+                    //What happens on note hit
                     Hit();
                     // print($"Hit on {inputIndex} note");
                     Destroy(notes[inputIndex].gameObject);
@@ -107,11 +111,13 @@ public class Lane : MonoBehaviour
                 }
                 else
                 {
+                    //what happens if player presses key at wrong time
                     // Miss();  //Substracts score if button pressed at wrong time
                 }
             }
             if (timeStamp + marginOfError <= audioTime)
             {
+                //What happens if player doesnt hit key at all
                 Miss();
                 // print($"Missed {inputIndex} note");
                 inputIndex++;
