@@ -5,7 +5,7 @@ USE PAS_drummancer;
 CREATE TABLE `user` (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     class VARCHAR(20) NOT NULL,
-    username VARCHAR(20) NOT NULL,
+    username VARCHAR(20) NOT NULL UNIQUE,
     pwd VARCHAR(20) NOT NULL,
     levels_unlocked INT NOT NULL,
     PRIMARY KEY (id),
