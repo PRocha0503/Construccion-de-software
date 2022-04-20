@@ -53,9 +53,7 @@ function main() {
 
     if (response.ok) {
       let results = await response.json();
-
-      console.log(results);
-      postResults.innerHTML = results.message;
+      postResults.innerHTML = results.msg;
     } else {
       postResults.innerHTML = response.status;
     }
@@ -66,8 +64,12 @@ function main() {
 
     const data = new FormData(formUpdate);
     const dataObj = Object.fromEntries(data.entries());
+    checkIfEmpty(dataObj);
 
-    let response = await fetch("http://localhost:5000/api/users", {
+    let user = document.getElementById("curusername");
+    let username = user.value;
+
+    let response = await fetch(`http://localhost:8000/api/user/${username}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataObj),
@@ -75,13 +77,20 @@ function main() {
 
     if (response.ok) {
       let results = await response.json();
-
-      console.log(results);
-      putResults.innerHTML = results.message;
+      putResults.innerHTML = results.msg;
     } else {
       putResults.innerHTML = response.status;
     }
   };
+
+  function checkIfEmpty(dataObj) {
+    for (const item in dataObj) {
+      if (dataObj[item] == "") {
+        console.log(dataObj[item]);
+        delete dataObj[item];
+      }
+    }
+  }
 
   formDelete.onsubmit = async (e) => {
     e.preventDefault();

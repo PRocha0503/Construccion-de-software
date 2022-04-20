@@ -33,7 +33,7 @@ const getClassUsers = async (req, res) => {
 
 const addUser = async (req, res) => {
   try {
-    const newUser = User.create({ ...req.body });
+    const newUser = await User.create({ ...req.body });
     res.send(200, { msg: `${newUser.username} was added` });
   } catch (e) {
     res.send(500, { msg: "Could not add user" });
