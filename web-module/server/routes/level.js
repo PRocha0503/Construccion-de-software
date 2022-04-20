@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 
 const Level = require("../models/level");
-const { levelExists } = require("../middleware/user");
+const { levelExists } = require("../middleware/level");
 
 const getAllLevels = async (req, res) => {
   try {
