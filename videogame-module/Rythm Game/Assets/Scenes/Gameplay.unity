@@ -777,7 +777,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5983383166397948030, guid: fd28c22d3322da34290b10e7868404ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd28c22d3322da34290b10e7868404ba, type: 3}
 --- !u!1 &176161534
 GameObject:
@@ -1015,7 +1016,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 76b1d1de4a3850046abf0d7e71dda7bb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0453e31df1c1366448e6ac20ed1af84e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1471,7 +1472,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 46da9d759f2e39f4ebc76108af9d3289, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4488,7 +4489,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 793840253}
-  emptySpeed: 0.1
+  emptyAmount: 0.1
+  emptySpeed: 0.001
 --- !u!114 &793840253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5319,7 +5321,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3c053e5e81d612d4b8996bde07a7fc86, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5499,7 +5501,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1105860957}
   - component: {fileID: 1105860959}
-  - component: {fileID: 1105860958}
   - component: {fileID: 1105860961}
   - component: {fileID: 1105860960}
   m_Layer: 0
@@ -5524,22 +5525,6 @@ Transform:
   m_Father: {fileID: 2058221331}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1105860958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105860956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8ebbab2e755a64185adfaf8ceefe30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -9021056428349411072, guid: 77cfab0019b57314b83f28b024ea61cc, type: 3}
-  pressedSprite: {fileID: 2937000059967084359, guid: 77cfab0019b57314b83f28b024ea61cc, type: 3}
-  sr: {fileID: 0}
-  keyToPress: 274
 --- !u!212 &1105860959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5714,7 +5699,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8672ab8c036d5642a94fb2e2950d235, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10715,7 +10700,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f916fd824f61d194baea9a461df74b7d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13156,7 +13141,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 587ec2c57a767d8459fb6773fdb52378, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13252,7 +13237,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1830276347}
   - component: {fileID: 1830276349}
-  - component: {fileID: 1830276348}
   - component: {fileID: 1830276351}
   - component: {fileID: 1830276350}
   m_Layer: 0
@@ -13277,22 +13261,6 @@ Transform:
   m_Father: {fileID: 2058221331}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1830276348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830276346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8ebbab2e755a64185adfaf8ceefe30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -9021056428349411072, guid: 77cfab0019b57314b83f28b024ea61cc, type: 3}
-  pressedSprite: {fileID: 2937000059967084359, guid: 77cfab0019b57314b83f28b024ea61cc, type: 3}
-  sr: {fileID: 0}
-  keyToPress: 275
 --- !u!212 &1830276349
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13518,7 +13486,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7a1c47abd7781184088e42a18614cbe7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13743,7 +13711,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5983383166397948030, guid: fd28c22d3322da34290b10e7868404ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd28c22d3322da34290b10e7868404ba, type: 3}
 --- !u!4 &1936314966 stripped
 Transform:
@@ -14207,7 +14176,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2014818702}
   - component: {fileID: 2014818704}
-  - component: {fileID: 2014818703}
   - component: {fileID: 2014818706}
   - component: {fileID: 2014818705}
   m_Layer: 0
@@ -14232,22 +14200,6 @@ Transform:
   m_Father: {fileID: 2058221331}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2014818703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014818701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8ebbab2e755a64185adfaf8ceefe30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -9021056428349411072, guid: 77cfab0019b57314b83f28b024ea61cc, type: 3}
-  pressedSprite: {fileID: 2937000059967084359, guid: 77cfab0019b57314b83f28b024ea61cc, type: 3}
-  sr: {fileID: 0}
-  keyToPress: 276
 --- !u!212 &2014818704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14580,7 +14532,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2c0b0db8da41bb144b914b27fcdb5d57, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14708,7 +14660,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8023804e086b204d8d0ed35e6eab074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2f82e1250b7c58f4bba6ace9d10e0bde, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14995,7 +14947,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1283779671572512209, guid: f71577ae1bd4b454fbafde8d11a1cfe7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f71577ae1bd4b454fbafde8d11a1cfe7, type: 3}
 --- !u!4 &3948545701866768737 stripped
 Transform:
@@ -30041,6 +29994,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973658025}
     m_Modifications:
+    - target: {fileID: 1832083099, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1832083099, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: m_audioClip
       value: 

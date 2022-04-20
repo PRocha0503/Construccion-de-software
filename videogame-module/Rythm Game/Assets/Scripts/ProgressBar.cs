@@ -12,9 +12,11 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
 
+    private bool hasStarted = false;
     public static ProgressBar Instance; 
     [SerializeField] public Slider slider;
-    [SerializeField] private float emptySpeed = .1f;
+    [SerializeField] private float emptyAmount = .1f;
+    [SerializeField] private float emptySpeed = .05f;
 
     public void SetHealth(int health)
     {
@@ -26,16 +28,35 @@ public class ProgressBar : MonoBehaviour
         slider.value += health;
     }
 
+    public void StartDecreasing()
+    {
+        if (hasStarted == false)
+        {
+            hasStarted = true;
+            StartCoroutine(DecreaseBar());
+        }
+    }
+
     private void Start()
     {
         Instance = this;
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (slider.value > 0)
         {
             slider.value -= emptySpeed * Time.deltaTime;
+        }
+    }*/
+
+    IEnumerator DecreaseBar()
+    {
+        Debug.Log("Starting to decrease");
+        while (true)
+        {
+            slider.value -= emptyAmount * Time.deltaTime;
+            yield return new WaitForSeconds(emptySpeed);
         }
     }
 }

@@ -149,6 +149,8 @@ public class SongManager : MonoBehaviour
     {
         //Increase the score
         ProgressBar.Instance.AddHealth(barBonus);
+        ProgressBar.Instance.StartDecreasing();
+        
         multiplierTracker++;
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
@@ -175,7 +177,7 @@ public class SongManager : MonoBehaviour
 
     public void SubstractScore()
     {
-        //Decrease the score
+        ProgressBar.Instance.StartDecreasing();
         if (currentScore > 0)
         {
             currentScore -= scorePerNote;
