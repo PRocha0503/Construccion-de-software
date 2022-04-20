@@ -1,9 +1,14 @@
 const { Sequelize } = require("sequelize");
-
-// console.log(process.env.PWD)
-const db = new Sequelize("PAS_drummancer", "root", "Kukakala-3", {
-  root: "localhost",
-  dialect: "mysql",
-});
+const dotenv = require("dotenv");
+dotenv.config();
+const db = new Sequelize(
+	process.env.DATABASE,
+	process.env.DBUSER,
+	process.env.PASSWORD,
+	{
+		root: "localhost",
+		dialect: "mysql",
+	}
+);
 
 module.exports = db;
