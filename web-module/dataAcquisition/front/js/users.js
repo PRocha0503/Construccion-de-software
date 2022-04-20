@@ -98,7 +98,10 @@ function main() {
     const data = new FormData(formDelete);
     const dataObj = Object.fromEntries(data.entries());
 
-    let response = await fetch("http://localhost:5000/api/users", {
+    let user = document.getElementById("curusernamedel");
+    let username = user.value;
+
+    let response = await fetch(`http://localhost:8000/api/user/${username}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataObj),
@@ -106,9 +109,7 @@ function main() {
 
     if (response.ok) {
       let results = await response.json();
-
-      console.log(results);
-      deleteResults.innerHTML = results.message;
+      deleteResults.innerHTML = results.msg;
     } else {
       deleteResults.innerHTML = response.status;
     }
