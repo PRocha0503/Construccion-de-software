@@ -22,13 +22,13 @@ const getUser = async (req, res) => {
 };
 
 const getClassUsers = async (req, res) => {
-	try {
-		const { className } = req.params;
-		const users = await User.findAll({ where: { class: className } });
-		res.send(200, users);
-	} catch (e) {
-		res.send(500, { msg: "Ups something went wrong" });
-	}
+  try {
+    const { className } = req.params;
+    const users = await User.findAll({ where: { class: className } });
+    res.send(200, users);
+  } catch (e) {
+    res.send(500, { msg: "Ups something went wrong" });
+  }
 };
 
 const addUser = async (req, res) => {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script type="module" defer src="../js/users.js"></script>
+    <title>USER API REQUESTS</title>
+  </head>
+  <body>
+    <div class="section">
+      <div class="formInput">
+        <h1>Show users</h1>
+        <form id="formSelect">
+          <input type="submit" value="Show users" />
+        </form>
+      </div>
+      <div class="resultDisplay">
+        <h1>Result</h1>
+        <p>When the request ends, the result will be displayed here.</p>
+        <div id="getResults"></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="formInput">
+        <h1>Add user</h1>
+        <form
+          id="formInsert"
+          method="post"
+          action="http://localhost:8000/api/user"
+        >
+          <input type="text" name="class" placeholder="Type your class" />
+          <input type="text" name="username" placeholder="Type your username" />
+          <input type="text" name="pwd" placeholder="Type your password" />
+          <input
+            type="text"
+            name="levels_unlocked"
+            placeholder="Type number of levels unlocked"
+          />
+          <input type="submit" value="Add User" />
+        </form>
+      </div>
+      <div class="resultDisplay">
+        <h1>Result</h1>
+        <p id="postResults">
+          When the request ends, the result will be displayed here.
+        </p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="formInput">
+        <h1>Update user</h1>
+        <form id="formUpdate" method="put">
+          <input type="text" name="userID" placeholder="Type your userID" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Type your first new name"
+          />
+          <input
+            type="text"
+            name="surname"
+            placeholder="Type your last new name"
+          />
+          <input type="submit" value="Update User" />
+        </form>
+      </div>
+      <div class="resultDisplay">
+        <h1>Result</h1>
+        <p id="putResults">
+          When the request ends, the result will be displayed here.
+        </p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="formInput">
+        <h1>Delete user</h1>
+        <form id="formDelete" method="delete">
+          <input type="text" name="userID" placeholder="Type your userID" />
+          <input type="submit" value="Delete User" />
+        </form>
+      </div>
+      <div class="resultDisplay">
+        <h1>Result</h1>
+        <p id="deleteResults">
+          When the request ends, the result will be displayed here.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
