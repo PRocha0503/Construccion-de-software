@@ -1,8 +1,9 @@
 const { Sequelize } = require("sequelize");
 
-const db = new Sequelize("PAS_drummancer", "root", "123", {
-	root: "localhost",
-	dialect: "mysql",
+// console.log(process.env.PWD)
+const db = new Sequelize("PAS_drummancer", "root", "Kukakala-3", {
+  root: "localhost",
+  dialect: "mysql",
 });
 
 module.exports = db;
