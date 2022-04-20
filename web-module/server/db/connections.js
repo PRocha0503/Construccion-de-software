@@ -1,8 +1,14 @@
 const { Sequelize } = require("sequelize");
-
-const db = new Sequelize("PAS_drummancer", "root", "123", {
-	root: "localhost",
-	dialect: "mysql",
-});
+const dotenv = require("dotenv");
+dotenv.config();
+const db = new Sequelize(
+	process.env.DATABASE,
+	process.env.DBUSER,
+	process.env.PASSWORD,
+	{
+		root: "localhost",
+		dialect: "mysql",
+	}
+);
 
 module.exports = db;

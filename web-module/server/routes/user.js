@@ -21,6 +21,16 @@ const getUser = async (req, res) => {
 	}
 };
 
+const getClassUsers = async (req, res) => {
+	try {
+		const { className } = req.params;
+		const users = await User.findAll({ where: { class: className } });
+		res.send(200, users);
+	} catch (e) {
+		res.send(500, { msg: "Ups something went wrong" });
+	}
+};
+
 const addUser = async (req, res) => {
 	try {
 		const newUser = User.create({ ...req.body });
@@ -55,6 +65,7 @@ const deleteUser = async (req, res) => {
 
 router.get("/", getAllUsers);
 router.get("/:username", userExists, getUser);
+router.get("/class/:className", getClassUsers);
 router.post("/", addUser);
 router.put("/:username", [updateFields, userExists], editUser);
 router.delete("/:username", userExists, deleteUser);
