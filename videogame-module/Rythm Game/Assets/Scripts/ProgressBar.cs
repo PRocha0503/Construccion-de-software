@@ -13,6 +13,7 @@ public class ProgressBar : MonoBehaviour
 {
 
     private bool hasStarted = false;
+    public bool isPlaying = true;
     public static ProgressBar Instance; 
     [SerializeField] public Slider slider;
     [SerializeField] private float emptyAmount = .1f;
@@ -36,24 +37,21 @@ public class ProgressBar : MonoBehaviour
             StartCoroutine(DecreaseBar());
         }
     }
+    
+    /*public void StopDecreasing()
+    {
+        StopCoroutine(DecreaseBar()); 
+    }*/
 
     private void Start()
     {
         Instance = this;
     }
 
-    /*private void Update()
-    {
-        if (slider.value > 0)
-        {
-            slider.value -= emptySpeed * Time.deltaTime;
-        }
-    }*/
-
     IEnumerator DecreaseBar()
     {
         Debug.Log("Starting to decrease");
-        while (true)
+        while (isPlaying)
         {
             slider.value -= emptyAmount * Time.deltaTime;
             yield return new WaitForSeconds(emptySpeed);
