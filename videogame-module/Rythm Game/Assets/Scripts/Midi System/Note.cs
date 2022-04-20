@@ -27,10 +27,12 @@ public class Note : MonoBehaviour
         
         if (t > 0.6)
         {
+            //Destroy the note if its off screen
             Destroy(gameObject);
         }
         else
         {
+            //Spawn note on desired position
             transform.localPosition = Vector3.Lerp(Vector3.right * SongManager.Instance.noteSpawnX, Vector3.right * SongManager.Instance.noteDespawnX, t);
             GetComponent<SpriteRenderer>().enabled = true;
         }

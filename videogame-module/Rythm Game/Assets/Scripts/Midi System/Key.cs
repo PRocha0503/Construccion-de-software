@@ -14,6 +14,7 @@ public class Key : MonoBehaviour
     public KeyCode input;
     void Update()
     {
+        //Change the sprite when the player presses the key
         if(Input.GetKeyDown(input))
         {
             GetComponent<SpriteRenderer>().sprite=spriteArray[1];
