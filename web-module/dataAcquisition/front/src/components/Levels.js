@@ -85,8 +85,10 @@ const Levels = () => {
 			const res = await axios.post(`${api}/level`, {
 				...formValues,
 			});
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
@@ -101,8 +103,10 @@ const Levels = () => {
 			const res = await axios.put(`${api}/level/${level_number}`, {
 				...body,
 			});
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
@@ -112,8 +116,11 @@ const Levels = () => {
 		console.log(level_number);
 		try {
 			const res = await axios.delete(`${api}/level/${level_number}`);
+			alert(false, res);
+
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
