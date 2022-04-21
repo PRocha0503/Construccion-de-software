@@ -5,7 +5,7 @@ const db = require("../db/connections");
 class Server {
 	constructor() {
 		this.app = express();
-		this.port = process.env.PORT;
+		this.port = 8080;
 		this.usersPath = "/api/user";
 		this.gamePath = "/api/game";
 		this.levelPath = "/api/level";
