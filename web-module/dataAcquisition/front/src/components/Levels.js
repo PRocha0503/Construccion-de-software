@@ -24,8 +24,12 @@ const Levels = () => {
 		total_number_of_notes: 0,
 		max_possible_score: 0,
 	};
+	const defaultDeleteValues = {
+		level_number: 0,
+	};
 	const [formValues, setFormValues] = useState(defaultValues);
 	const [editValues, setEditValues] = useState(defaultEditValues);
+	const [deleteValues, setDeleteValues] = useState(defaultDeleteValues);
 	const columns: GridColDef[] = [
 		{ field: "id", headerName: "Level Number", width: 250, id: true },
 		{ field: "difficulty", headerName: "Difficulty", width: 250 },
@@ -58,6 +62,7 @@ const Levels = () => {
 			[name]: value,
 		});
 	};
+
 	const handleEditChange = (e) => {
 		const { name, value } = e.target;
 		console.log("Here");
@@ -66,6 +71,15 @@ const Levels = () => {
 			[name]: value,
 		});
 	};
+
+	const handleDeleteChange = (e) => {
+		const { name, value } = e.target;
+		setDeleteValues({
+			...deleteValues,
+			[name]: value,
+		});
+	};
+
 	const addLevel = async () => {
 		try {
 			const res = await axios.post(`${api}/level`, {
@@ -92,6 +106,18 @@ const Levels = () => {
 			console.log(e);
 		}
 	};
+
+	const deleteLevel = async () => {
+		const { level_number } = deleteValues;
+		console.log(level_number);
+		try {
+			const res = await axios.delete(`${api}/level/${level_number}`);
+			setChange(change + 1);
+		} catch (e) {
+			console.log(e);
+		}
+	};
+
 	return (
 		<>
 			<Box className={classes.container}>
@@ -188,7 +214,26 @@ const Levels = () => {
 				/>
 				<div>
 					<Button onClick={editLevel} className={classes.button}>
-						Edit User
+						Edit Level
+					</Button>
+				</div>
+				<Typography variant="h4" component="h2" className={classes.subtitle}>
+					Delete Level
+				</Typography>
+				<div>
+					<TextField
+						className={classes.input}
+						id="level_number-delete"
+						name="level_number"
+						label="level_number"
+						type="number"
+						value={deleteValues.level_number}
+						onChange={handleDeleteChange}
+					/>
+				</div>
+				<div>
+					<Button onClick={deleteLevel} className={classes.button}>
+						Delete Level
 					</Button>
 				</div>
 			</Box>

@@ -18,7 +18,7 @@ const Game = () => {
 		level_id: 0,
 		score: 0,
 		correct_number_of_notes: 0,
-		date_played: "",
+		date_played: "2022-03-05",
 	};
 	const defaultEditValues = {
 		game_id: 0,
@@ -28,8 +28,12 @@ const Game = () => {
 		correct_number_of_notes: 0,
 		date_played: "",
 	};
+	const defaultDeleteValues = {
+		game_id: 0,
+	};
 	const [formValues, setFormValues] = useState(defaultValues);
 	const [editValues, setEditValues] = useState(defaultEditValues);
+	const [deleteValues, setDeleteValues] = useState(defaultDeleteValues);
 	const columns: GridColDef[] = [
 		{ field: "id", headerName: "Game ID", width: 250, id: true },
 		{ field: "user_id", headerName: "User ID", width: 250 },
@@ -66,6 +70,7 @@ const Game = () => {
 		};
 		getUsers();
 	}, [change]);
+
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
 		setFormValues({
@@ -73,11 +78,18 @@ const Game = () => {
 			[name]: value,
 		});
 	};
+
 	const handleEditChange = (e) => {
 		const { name, value } = e.target;
-		console.log("Here");
 		setEditValues({
 			...editValues,
+			[name]: value,
+		});
+	};
+	const handleDeleteChange = (e) => {
+		const { name, value } = e.target;
+		setDeleteValues({
+			...deleteValues,
 			[name]: value,
 		});
 	};
@@ -107,6 +119,15 @@ const Game = () => {
 			console.log(e);
 		}
 	};
+	const deleteGame = async () => {
+		const { game_id } = deleteValues;
+		try {
+			const res = await axios.delete(`${api}/game/${game_id}`);
+			setChange(change + 1);
+		} catch (e) {
+			console.log(e);
+		}
+	};
 	return (
 		<>
 			<Box className={classes.container}>
@@ -123,6 +144,9 @@ const Game = () => {
 						pageSize={5}
 						rowsPerPageOptions={[5]}
 						checkboxSelection
+						onCheck={() => {
+							console.log("LLLLL");
+						}}
 					/>
 				</div>
 				<Typography variant="h4" component="h2" className={classes.subtitle}>
@@ -240,6 +264,25 @@ const Game = () => {
 				<div>
 					<Button onClick={editGame} className={classes.button}>
 						Edit Game
+					</Button>
+				</div>
+				<Typography variant="h4" component="h2" className={classes.subtitle}>
+					Delete Game
+				</Typography>
+				<div>
+					<TextField
+						className={classes.input}
+						id="game_id-delete"
+						name="game_id"
+						label="game_id"
+						type="number"
+						value={deleteValues.game_id}
+						onChange={handleDeleteChange}
+					/>
+				</div>
+				<div>
+					<Button onClick={deleteGame} className={classes.button}>
+						Delete Game
 					</Button>
 				</div>
 			</Box>

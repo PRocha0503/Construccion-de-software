@@ -25,8 +25,12 @@ const Users = () => {
 		pwd: "",
 		levels_unlocked: 0,
 	};
+	const defaultDeleteValues = {
+		username: 0,
+	};
 	const [formValues, setFormValues] = useState(defaultValues);
 	const [editValues, setEditValues] = useState(defaultEditValues);
+	const [deleteValues, setDeleteValues] = useState(defaultDeleteValues);
 	const columns: GridColDef[] = [
 		{ field: "id", headerName: "ID", width: 250 },
 		{ field: "class", headerName: "Class", width: 250 },
@@ -56,6 +60,15 @@ const Users = () => {
 			[name]: value,
 		});
 	};
+
+	const handleDeleteChange = (e) => {
+		const { name, value } = e.target;
+		setDeleteValues({
+			...deleteValues,
+			[name]: value,
+		});
+	};
+
 	const addUser = async () => {
 		try {
 			const res = await axios.post(`${api}/user`, {
@@ -82,6 +95,17 @@ const Users = () => {
 			console.log(e);
 		}
 	};
+
+	const deleteUser = async () => {
+		const { username } = deleteValues;
+		try {
+			const res = await axios.delete(`${api}/user/${username}`);
+			setChange(change + 1);
+		} catch (e) {
+			console.log(e);
+		}
+	};
+
 	return (
 		<>
 			<Box className={classes.container}>
@@ -188,6 +212,25 @@ const Users = () => {
 				<div>
 					<Button onClick={editUser} className={classes.button}>
 						Edit User
+					</Button>
+				</div>
+				<Typography variant="h4" component="h2" className={classes.subtitle}>
+					Delete User
+				</Typography>
+				<div>
+					<TextField
+						className={classes.input}
+						id="username-delete"
+						name="username"
+						label="username"
+						type="text"
+						value={deleteValues.username}
+						onChange={handleDeleteChange}
+					/>
+				</div>
+				<div>
+					<Button onClick={deleteUser} className={classes.button}>
+						Delete User
 					</Button>
 				</div>
 			</Box>
