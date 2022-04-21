@@ -4,6 +4,7 @@ By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
 Script to change between scenes
 */
 
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -26,7 +27,7 @@ public class SceneChanger : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         //Load scene
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(scene);
     }
-    
+
 }

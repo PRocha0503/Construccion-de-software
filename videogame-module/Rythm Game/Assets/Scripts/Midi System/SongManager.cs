@@ -58,6 +58,10 @@ public class SongManager : MonoBehaviour
     public string sceneAfterWin; 
     public string sceneAfterLoose; 
     public static MidiFile midiFile;
+
+    [Header("Particle Settings")] 
+    [SerializeField] private ParticleSystem noteBreak;
+    
     // Start is called before the first frame update
     void Start()
     {
