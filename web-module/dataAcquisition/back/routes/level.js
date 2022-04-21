@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 
 const Level = require("../models/level");
-const { levelExists } = require("../middleware/level");
+const { updateFields, levelExists } = require("../middleware/level");
 
 const getAllLevels = async (req, res) => {
   try {
@@ -22,6 +22,18 @@ const addLevel = async (req, res) => {
   }
 };
 
+const editLevel = async (req, res) => {
+  try {
+    const level = req.level;
+    level.set({ ...req.body });
+    await level.save();
+    res.send(200, { msg: `${level.level_number} has been updated` });
+  } catch (e) {
+    res.send(500, { msg: e });
+    console.log(e);
+  }
+};
+
 const deleteLevel = async (req, res) => {
   try {
     const level = req.level;
@@ -35,6 +47,7 @@ const deleteLevel = async (req, res) => {
 
 router.get("/", getAllLevels);
 router.post("/", addLevel);
+router.put("/:level_number", [updateFields, levelExists], editLevel);
 router.delete("/:level_number", levelExists, deleteLevel);
 
 module.exports = router;

@@ -2,7 +2,7 @@ function main() {
   formSelect.onsubmit = async (e) => {
     e.preventDefault();
 
-    let response = await fetch("http://localhost:8000/api/user", {
+    let response = await fetch("http://localhost:8000/api/game", {
       method: "GET",
     });
 
@@ -45,7 +45,7 @@ function main() {
     const data = new FormData(formInsert);
     const dataObj = Object.fromEntries(data.entries());
 
-    let response = await fetch("http://localhost:8000/api/user", {
+    let response = await fetch("http://localhost:8000/api/game", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataObj),
@@ -66,10 +66,10 @@ function main() {
     const dataObj = Object.fromEntries(data.entries());
     checkIfEmpty(dataObj);
 
-    let user = document.getElementById("curusername");
-    let username = user.value;
+    let game = document.getElementById("curGameId");
+    let game_id = game.value;
 
-    let response = await fetch(`http://localhost:8000/api/user/${username}`, {
+    let response = await fetch(`http://localhost:8000/api/game/${game_id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataObj),
@@ -97,10 +97,10 @@ function main() {
     const data = new FormData(formDelete);
     const dataObj = Object.fromEntries(data.entries());
 
-    let user = document.getElementById("curusernamedel");
-    let username = user.value;
+    let game = document.getElementById("curGameIdDel");
+    let game_id = game.value;
 
-    let response = await fetch(`http://localhost:8000/api/user/${username}`, {
+    let response = await fetch(`http://localhost:8000/api/game/${game_id}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataObj),

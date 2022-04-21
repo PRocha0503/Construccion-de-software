@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
-    <script type="module" defer src="../js/users.js"></script>
-    <title>USER API REQUESTS</title>
+    <script type="module" defer src="../js/games.js"></script>
+    <title>GAME API REQUESTS</title>
   </head>
   <body>
     <div class="section">
@@ -17,13 +17,13 @@
       >
         RETURN TO MENU
       </button>
-      <h1 style="margin-left: 10px">USER API REQUESTS</h1>
+      <h1 style="margin-left: 10px">GAME API REQUESTS</h1>
     </div>
     <div class="section">
       <div class="formInput">
-        <h1>Show users</h1>
+        <h1>Show games</h1>
         <form id="formSelect">
-          <input type="submit" value="Show users" />
+          <input type="submit" value="Show games" />
         </form>
       </div>
       <div class="resultDisplay">
@@ -34,21 +34,34 @@
     </div>
     <div class="section">
       <div class="formInput">
-        <h1>Add user</h1>
+        <h1>Add game</h1>
         <form
           id="formInsert"
           method="post"
-          action="http://localhost:8000/api/user"
+          action="http://localhost:8000/api/game"
         >
-          <input type="text" name="class" placeholder="Type your class" />
-          <input type="text" name="username" placeholder="Type your username" />
-          <input type="text" name="pwd" placeholder="Type your password" />
           <input
             type="text"
-            name="levels_unlocked"
-            placeholder="Type number of levels unlocked"
+            name="user_id"
+            placeholder="Type the game user id"
           />
-          <input type="submit" value="Add User" />
+          <input
+            type="text"
+            name="level_id"
+            placeholder="Type the game level number"
+          />
+          <input type="text" name="score" placeholder="Type the game score" />
+          <input
+            type="text"
+            name="correct_number_of_notes"
+            placeholder="Type the correct number of notes"
+          />
+          <input
+            type="date"
+            name="date_played"
+            placeholder="Type the date played"
+          />
+          <input type="submit" value="Add game" />
         </form>
       </div>
       <div class="resultDisplay">
@@ -60,27 +73,26 @@
     </div>
     <div class="section">
       <div class="formInput">
-        <h1>Update user</h1>
+        <h1>Update game</h1>
         <input
           class="inputField"
           type="text"
-          id="curusername"
-          placeholder="Type your username"
+          id="curGameId"
+          placeholder="Type game id"
         />
         <form id="formUpdate" method="put">
-          <input type="text" name="class" placeholder="Type your new class" />
+          <input type="text" name="score" placeholder="Type new score" />
           <input
             type="text"
-            name="username"
-            placeholder="Type your new username"
+            name="correct_number_of_notes"
+            placeholder="Type new correct number of notes"
           />
-          <input type="text" name="pwd" placeholder="Type your new password" />
           <input
-            type="text"
-            name="levels_unlocked"
-            placeholder="Type your new number of levels unlocked"
+            type="date"
+            name="date_played"
+            placeholder="Type new date played"
           />
-          <input type="submit" value="Update User" />
+          <input type="submit" value="Update game" />
         </form>
       </div>
       <div class="resultDisplay">
@@ -92,15 +104,15 @@
     </div>
     <div class="section">
       <div class="formInput">
-        <h1>Delete user</h1>
+        <h1>Delete game</h1>
         <form id="formDelete" method="delete">
           <input
             class="inputField"
             type="text"
-            id="curusernamedel"
-            placeholder="Type your username"
+            id="curGameIdDel"
+            placeholder="Type game id"
           />
-          <input type="submit" value="Delete User" />
+          <input type="submit" value="Delete game" />
         </form>
       </div>
       <div class="resultDisplay">
