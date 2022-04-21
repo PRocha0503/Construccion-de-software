@@ -98,8 +98,10 @@ const Game = () => {
 			const res = await axios.post(`${api}/game`, {
 				...formValues,
 			});
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
@@ -114,8 +116,10 @@ const Game = () => {
 			const res = await axios.put(`${api}/game/${game_id}`, {
 				...body,
 			});
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
@@ -123,8 +127,10 @@ const Game = () => {
 		const { game_id } = deleteValues;
 		try {
 			const res = await axios.delete(`${api}/game/${game_id}`);
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};

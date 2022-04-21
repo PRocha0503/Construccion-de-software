@@ -8,7 +8,7 @@ import Box from "@material-ui/core/Box";
 import Style from "../styles/style";
 const axios = require("axios").default;
 
-const Users = () => {
+const Users = ({ alert }) => {
 	const api = "http://localhost:8080/api";
 	const [users, setUsers] = useState({});
 	const [change, setChange] = useState(0);
@@ -74,8 +74,10 @@ const Users = () => {
 			const res = await axios.post(`${api}/user`, {
 				...formValues,
 			});
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
@@ -90,8 +92,10 @@ const Users = () => {
 			const res = await axios.put(`${api}/user/${username}`, {
 				...body,
 			});
+			alert(false, res);
 			setChange(change + 1);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};
@@ -101,7 +105,9 @@ const Users = () => {
 		try {
 			const res = await axios.delete(`${api}/user/${username}`);
 			setChange(change + 1);
+			alert(false, res);
 		} catch (e) {
+			alert(true, e);
 			console.log(e);
 		}
 	};

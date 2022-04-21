@@ -37,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
 			background: "#E97A68",
 		},
 	},
+	alert: {
+		position: "sticky",
+		top: 0,
+	},
 }));
 
 export default useStyles;
