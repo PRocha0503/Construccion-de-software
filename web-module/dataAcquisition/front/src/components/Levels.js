@@ -8,7 +8,7 @@ import Box from "@material-ui/core/Box";
 import Style from "../styles/style";
 const axios = require("axios").default;
 
-const Levels = () => {
+const Levels = ({alert}) => {
 	const api = "http://localhost:8080/api";
 	const [users, setUsers] = useState({});
 	const [change, setChange] = useState(0);
