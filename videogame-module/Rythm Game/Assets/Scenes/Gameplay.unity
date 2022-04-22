@@ -29931,6 +29931,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light Pillar
       objectReference: {fileID: 0}
+    - target: {fileID: 2982390610410595399, guid: 05e7abba5dd0de148a323228b8ddd2e9, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982390610410595399, guid: 05e7abba5dd0de148a323228b8ddd2e9, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05e7abba5dd0de148a323228b8ddd2e9, type: 3}
 --- !u!1001 &6019529102084042041
