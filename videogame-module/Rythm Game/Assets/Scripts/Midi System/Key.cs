@@ -45,6 +45,7 @@ public class Key : MonoBehaviour
             
             //This activated the drumset animation
             PlayDrumAnimation(animationToPlay);
+            
         }
         else if (Input.GetKeyUp(input))
         {
@@ -55,7 +56,9 @@ public class Key : MonoBehaviour
 
     private void PlayDrumAnimation(DrumAnimations anim)
     {
-        if (anim == DrumAnimations.BassDrum)
+        drumset.SetTrigger(anim.ToString());
+        //Old way to play animations 
+        /*if (anim == DrumAnimations.BassDrum)
             drumset.SetTrigger("BassDrum");
         else if (anim == DrumAnimations.FloorTom)
             drumset.SetTrigger("FloorTom");
@@ -70,6 +73,6 @@ public class Key : MonoBehaviour
         else if (anim == DrumAnimations.Ride)
             drumset.SetTrigger("Ride");
         else if (anim == DrumAnimations.Crash)
-            drumset.SetTrigger("Crash");
+            drumset.SetTrigger("Crash");*/
     }
 }
