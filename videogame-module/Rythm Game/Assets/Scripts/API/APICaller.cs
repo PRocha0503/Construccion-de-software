@@ -9,6 +9,7 @@ public class Request
     public string error;
     public UnityEngine.Networking.UnityWebRequest.Result result;
     public string response; 
+    public long responseCode;
 }  
 
 public class APICaller : MonoBehaviour
@@ -22,28 +23,33 @@ public class APICaller : MonoBehaviour
         req.result = www.result;
         req.error = www.error;
         req.response =  www.downloadHandler.text;
+        req.responseCode= www.responseCode;
         callback(req);
     }
-    public IEnumerator PostRequest(string uri, WWWForm form, System.Action<Request> callback=null)
+    public IEnumerator PostRequest(string uri, string json, System.Action<Request> callback=null)
     {
-        UnityWebRequest www = UnityWebRequest.Post(uri,form);
+        UnityWebRequest www = UnityWebRequest.Put(uri,json);
+        www.SetRequestHeader("Content-Type", "application/json");
         // Request and wait for the desired page.
         yield return www.SendWebRequest();
         Request req = new Request();
         req.result = www.result;
         req.error = www.error;
         req.response =  www.downloadHandler.text;
+        req.responseCode= www.responseCode;
         callback(req);
     }
-    public IEnumerator PutRequest(string uri, byte[] body, System.Action<Request> callback=null)
+    public IEnumerator PutRequest(string uri, string json, System.Action<Request> callback=null)
     {
-        UnityWebRequest www = UnityWebRequest.Put(uri,body);
+        UnityWebRequest www = UnityWebRequest.Put(uri,json);
+        www.SetRequestHeader("Content-Type", "application/json");
         // Request and wait for the desired page.
         yield return www.SendWebRequest();
         Request req = new Request();
         req.result = www.result;
         req.error = www.error;
         req.response =  www.downloadHandler.text;
+        req.responseCode= www.responseCode;
         callback(req);
     }
     public IEnumerator DeleteRequest(string uri, System.Action<Request> callback=null)
@@ -54,7 +60,8 @@ public class APICaller : MonoBehaviour
         Request req = new Request();
         req.result = www.result;
         req.error = www.error;
-        req.response =  www.downloadHandler.text;
+        req.response =  www.responseCode.ToString();
+        req.responseCode= www.responseCode;
         callback(req);
     }
 }
