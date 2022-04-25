@@ -32,11 +32,15 @@ const getClassUsers = async (req, res) => {
 };
 
 const addUser = async (req, res) => {
+	if (req.body.classDB) {
+		req.body.class = req.body.classDB;
+		delete req.body.classDB;
+	}
 	try {
 		const newUser = await User.create({ ...req.body });
 		res.send(200, { msg: `${newUser.username} was added` });
 	} catch (e) {
-		res.send(500, { msg: "Could not add user" });
+		res.send(500, { msg: e });
 	}
 };
 
@@ -81,6 +85,7 @@ router.get("/:username", userExists, getUser);
 router.get("/login/:username", userExists, login);
 router.get("/class/:className", getClassUsers);
 router.post("/", addUser);
+router.put("/", addUser);
 router.put("/:username", [updateFields, userExists], editUser);
 router.delete("/:username", userExists, deleteUser);
 

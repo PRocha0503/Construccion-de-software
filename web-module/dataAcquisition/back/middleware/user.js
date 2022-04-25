@@ -16,10 +16,16 @@ const userExists = async (req, res, next) => {
 
 const updateFields = (req, res, next) => {
 	try {
+		for (key of Object.keys(req.body)) {
+			if (!req.body[key]) {
+				delete req.body[key];
+			}
+		}
 		const { username, pwd, levels_unlocked, ...rest } = req.body;
 		if (Object.keys(rest).length > 1) {
 			throw `You can not update ${Object.keys(rest)}`;
 		}
+
 		next();
 	} catch (e) {
 		res.send(400, { error: e });
