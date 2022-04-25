@@ -106,10 +106,11 @@ public class Lane : MonoBehaviour
                 {
                     //What happens on note hit
                     Hit();
-                    GameObject destruction = Instantiate(noteBreak, notes[inputIndex].gameObject.transform.position, Quaternion.Euler(0,0,110));
+                    var destruction = Instantiate(noteBreak, notes[inputIndex].gameObject.transform.position, Quaternion.Euler(0,0,110));
+                    destruction.transform.parent = this.transform;
                     print($"Hit on {inputIndex} note");
                     Destroy(notes[inputIndex].gameObject);
-                    Destroy(destruction, 3);
+                    Destroy(destruction, 10);
 
                     inputIndex++;
                 }

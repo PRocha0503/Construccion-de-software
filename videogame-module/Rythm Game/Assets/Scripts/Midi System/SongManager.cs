@@ -47,8 +47,6 @@ public class SongManager : MonoBehaviour
     [SerializeField] private int currentMultiplier;
     [SerializeField] private int multiplierTracker;
     [SerializeField] private int[] multiplierThresholds;
-
-    [Header("Multiplier Settings")] 
     [SerializeField] private int barBonus;
 
     [Header("Endgame Conditions Settings")]
@@ -58,9 +56,7 @@ public class SongManager : MonoBehaviour
     public string sceneAfterWin; 
     public string sceneAfterLoose; 
     public static MidiFile midiFile;
-
-    [Header("Particle Settings")] 
-    [SerializeField] private ParticleSystem noteBreak;
+    
     
     // Start is called before the first frame update
     void Start()

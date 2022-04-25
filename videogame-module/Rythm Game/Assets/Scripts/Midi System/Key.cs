@@ -44,35 +44,12 @@ public class Key : MonoBehaviour
             drumSound.Play();
             
             //This activated the drumset animation
-            PlayDrumAnimation(animationToPlay);
-            
+            Drumset.instance.PlayDrumAnimation(animationToPlay.ToString());
         }
         else if (Input.GetKeyUp(input))
         {
             GetComponent<SpriteRenderer>().sprite=spriteArray[0];
         }
     }
-
-
-    private void PlayDrumAnimation(DrumAnimations anim)
-    {
-        drumset.SetTrigger(anim.ToString());
-        //Old way to play animations 
-        /*if (anim == DrumAnimations.BassDrum)
-            drumset.SetTrigger("BassDrum");
-        else if (anim == DrumAnimations.FloorTom)
-            drumset.SetTrigger("FloorTom");
-        else if (anim == DrumAnimations.SnareDrum)
-            drumset.SetTrigger("SnareDrum");
-        else if (anim == DrumAnimations.Hihat)
-            drumset.SetTrigger("Hihat");
-        else if (anim == DrumAnimations.Tom2)
-            drumset.SetTrigger("Tom2");
-        else if (anim == DrumAnimations.Tom1)
-            drumset.SetTrigger("Tom1");
-        else if (anim == DrumAnimations.Ride)
-            drumset.SetTrigger("Ride");
-        else if (anim == DrumAnimations.Crash)
-            drumset.SetTrigger("Crash");*/
-    }
+    
 }

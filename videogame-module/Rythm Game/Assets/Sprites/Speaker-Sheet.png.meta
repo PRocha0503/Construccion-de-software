@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 212da7e09c9f1c44fb312cd85f7e76ab
+guid: 072068a558545b14286af93d5558d90e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Drumset_0
+      name: Speaker-Sheet_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 49
-        width: 13
-        height: 10
+        x: 70
+        y: 210
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfd318009825c164b8d05488c626555c
-      internalID: -406597709
+      spriteID: 4e480936707889543aa23b108e7da02f
+      internalID: 1622207148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_1
+      name: Speaker-Sheet_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 51
-        width: 20
-        height: 5
+        x: 140
+        y: 210
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03fd6dbd7dc9dcf4ba102326d8afe450
-      internalID: -89077603
+      spriteID: a24dfcfd7a7c2d54cb20c392d4c81333
+      internalID: -931289580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_2
+      name: Speaker-Sheet_2
       rect:
         serializedVersion: 2
-        x: 136
-        y: 51
-        width: 15
-        height: 5
+        x: 210
+        y: 210
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9de97666e1fb2934480c8fb3094d865d
-      internalID: -999538673
+      spriteID: 96e016bfba72daf45a959928dba62f31
+      internalID: -1862288422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_3
+      name: Speaker-Sheet_3
       rect:
         serializedVersion: 2
-        x: 168
-        y: 47
-        width: 13
-        height: 7
+        x: 0
+        y: 140
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c2ef3b795b092442a5bc02d35772e29
-      internalID: -1267645977
+      spriteID: 3080790228b2f8841bde62811a85ca96
+      internalID: -1775468751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_4
+      name: Speaker-Sheet_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 12
-        width: 18
-        height: 27
+        x: 70
+        y: 140
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c332726d045f25746810bf668c5bebcd
-      internalID: -365250726
+      spriteID: d8aa50e4547f4f949b02c666db4c82b0
+      internalID: 23483324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_5
+      name: Speaker-Sheet_5
       rect:
         serializedVersion: 2
-        x: 56
-        y: 31
-        width: 13
-        height: 10
+        x: 140
+        y: 140
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4af66e23010bae54b9bef36ddba23c6f
-      internalID: -390491874
+      spriteID: ec22938ff9a5eea45ba8c94d7a3215de
+      internalID: -472453433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_6
+      name: Speaker-Sheet_6
       rect:
         serializedVersion: 2
-        x: 87
-        y: 12
-        width: 13
-        height: 34
+        x: 210
+        y: 140
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79571a0a2dffe934185c13a2546f6111
-      internalID: -404389103
+      spriteID: 6949324f6bf610c4ebea92e9a3190f5f
+      internalID: 1438316548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_7
+      name: Speaker-Sheet_7
       rect:
         serializedVersion: 2
-        x: 109
-        y: 24
-        width: 15
-        height: 15
+        x: 0
+        y: 70
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a34124c02621de429ecd012ca9e7e7e
-      internalID: -347359034
+      spriteID: 531b36ca02e746848b8b6e3c2d3b1528
+      internalID: -1264388621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_8
+      name: Speaker-Sheet_8
       rect:
         serializedVersion: 2
-        x: 137
-        y: 12
-        width: 13
-        height: 34
+        x: 70
+        y: 70
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43900f2135f14934ab53105450967783
-      internalID: -2080796808
+      spriteID: 8ea530797cfccd64d8c1b2821693300f
+      internalID: 1072876823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_9
+      name: Speaker-Sheet_9
       rect:
         serializedVersion: 2
-        x: 168
-        y: 12
-        width: 13
-        height: 28
+        x: 140
+        y: 70
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21bcbb7484935e049a3618dce00ef4af
-      internalID: 1126195449
+      spriteID: 8a51a893b873578429e5d4088b0e2544
+      internalID: 483119753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_10
+      name: Speaker-Sheet_10
       rect:
         serializedVersion: 2
-        x: 45
-        y: 12
-        width: 13
-        height: 10
+        x: 210
+        y: 70
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59f6bd88c3a8a214ebb9da6826e8cb65
-      internalID: 288092393
+      spriteID: 3f85771cde1125546973a7e6e01a4846
+      internalID: -1224181478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_11
+      name: Speaker-Sheet_11
       rect:
         serializedVersion: 2
-        x: 67
-        y: 12
-        width: 12
-        height: 10
+        x: 0
+        y: 0
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4180d917740e1574ba14965705633e4a
-      internalID: 1696713356
+      spriteID: a72eefcdcf2c11b45978200fb5b85eb4
+      internalID: 694263900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drumset_12
+      name: Speaker-Sheet_12
       rect:
         serializedVersion: 2
-        x: 110
-        y: 12
-        width: 13
-        height: 7
+        x: 70
+        y: 0
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,8 +370,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6d3b0b982ec70c49bb92ff018573c5e
-      internalID: -1272917445
+      spriteID: afd7b6d6298b5e4458291d47127641f3
+      internalID: 605307712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf20e243623d23a429137107d058f594
+      internalID: -600876867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speaker-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7736694a053c9468cf849622a5ccb5
+      internalID: 149457530
       vertices: []
       indices: 
       edges: []
@@ -387,19 +429,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Drumset_2: -999538673
-      Drumset_12: -1272917445
-      Drumset_3: -1267645977
-      Drumset_6: -404389103
-      Drumset_10: 288092393
-      Drumset_11: 1696713356
-      Drumset_9: 1126195449
-      Drumset_1: -89077603
-      Drumset_0: -406597709
-      Drumset_4: -365250726
-      Drumset_7: -347359034
-      Drumset_5: -390491874
-      Drumset_8: -2080796808
+      Speaker-Sheet_1: -931289580
+      Speaker-Sheet_11: 694263900
+      Speaker-Sheet_5: -472453433
+      Speaker-Sheet_4: 23483324
+      Speaker-Sheet_8: 1072876823
+      Speaker-Sheet_6: 1438316548
+      Speaker-Sheet_14: 149457530
+      Speaker-Sheet_9: 483119753
+      Speaker-Sheet_12: 605307712
+      Speaker-Sheet_3: -1775468751
+      Speaker-Sheet_10: -1224181478
+      Speaker-Sheet_2: -1862288422
+      Speaker-Sheet_13: -600876867
+      Speaker-Sheet_0: 1622207148
+      Speaker-Sheet_7: -1264388621
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
