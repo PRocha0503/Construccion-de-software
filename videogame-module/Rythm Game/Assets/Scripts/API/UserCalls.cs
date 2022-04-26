@@ -11,16 +11,18 @@ public class User
 }
 
 
-
 public class UserCalls : MonoBehaviour
 {
     public string url;
     private APICaller www;
     Request response = new Request();
-    public User currentUser = new User();
+    public static User currentUser = new User();
+    SceneChanger sChanger;
+
     void Start()
     {
         www = FindObjectOfType<APICaller>();
+        sChanger= FindObjectOfType<SceneChanger>();
     }
     void printRequest(Request _req){
         Debug.Log("Response Code: "+response.responseCode);
@@ -36,6 +38,24 @@ public class UserCalls : MonoBehaviour
             currentUser = JsonUtility.FromJson<User>(response.response);
         }));
     }
+
+    public void login(string username, string pwd){
+        User myObject = new User();
+        myObject.classDB = "";
+        myObject.username = username;
+        myObject.pwd = pwd;
+        myObject.levels_unlocked = 0;
+        string json = JsonUtility.ToJson(myObject);
+        Debug.Log(url+"/login/"+username);
+        StartCoroutine(www.PostRequest(url+"/login/"+username,json, request =>
+        {
+            response = request;
+            printRequest(response);
+            response.response = response.response.Replace("class", "classDB");
+            currentUser = JsonUtility.FromJson<User>(response.response);
+            sChanger.GoToScene("HomeScreen");
+        }));
+    }
     public void deleteUser(string username){
         StartCoroutine(www.DeleteRequest(url+"/"+username, request =>
         {
@@ -43,7 +63,7 @@ public class UserCalls : MonoBehaviour
             printRequest(response);
         }));
     }
-    public void addUser(string classDB, string username, string pwd, int levels_unlocked){
+    public void addUser(string classDB, string username, string pwd, int levels_unlocked=0){
         User myObject = new User();
         myObject.classDB = classDB;
         myObject.username = username;
