@@ -72,7 +72,7 @@ const login = async (req, res) => {
 		const { pwd } = req.body;
 		const { pwd: realPassword } = req.user;
 		if (pwd === realPassword) {
-			res.send(200, { msg: "Login correct" });
+			return res.send(200, req.user);
 		}
 		return res.send(401, { msg: "Wrong credentials" });
 	} catch (e) {
@@ -82,7 +82,7 @@ const login = async (req, res) => {
 
 router.get("/", getAllUsers);
 router.get("/:username", userExists, getUser);
-router.get("/login/:username", userExists, login);
+router.post("/login/:username", userExists, login);
 router.get("/class/:className", getClassUsers);
 router.post("/", addUser);
 router.put("/", addUser);
