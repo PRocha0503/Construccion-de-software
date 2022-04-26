@@ -12,9 +12,21 @@ public class LevelUnlocker : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < levelsUnlocked; i++)
+        levelsUnlocked = 2;
+        foreach (var button in levelButtons)
         {
-            
+            button.interactable = false;
         }
+        unlockLevels(levelsUnlocked);
+
+    }
+    
+    public void unlockLevels(int unlocks)
+    {
+        for (int i = 0; i < unlocks; i++)
+        {
+            levelButtons[i].interactable = true;
+        }
+        
     }
 }
