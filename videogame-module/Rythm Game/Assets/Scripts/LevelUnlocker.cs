@@ -4,6 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// public class LevelSelector {
+//     public string nextScene;
+//     public string songName;
+//     public int difficulty;
+//     public int numberOfNotes;
+
+// }
+// public class LevelSelectorList {
+//     public List<LevelSelector> levels;
+
+// }
+
 public class LevelUnlocker : MonoBehaviour
 {
     [SerializeField] private Button[] levelButtons;
@@ -11,10 +23,12 @@ public class LevelUnlocker : MonoBehaviour
     private int levelsUnlocked;
 
 
+
     private void Start()
     {
+
         instance = this;
-        levelsUnlocked = 2;
+        levelsUnlocked = UserCalls.currentUser.levels_unlocked;
         foreach (var button in levelButtons)
         {
             button.interactable = false;
