@@ -56,11 +56,12 @@ public class SongManager : MonoBehaviour
     public string sceneAfterWin; 
     public string sceneAfterLoose; 
     public static MidiFile midiFile;
-    
-    
+
+    private bool startedLoading = false;
     // Start is called before the first frame update
     void Start()
     {
+        
         currentMultiplier = 1; 
         Instance = this;
         if (Application.streamingAssetsPath.StartsWith("http://") || Application.streamingAssetsPath.StartsWith("https://"))
@@ -78,8 +79,9 @@ public class SongManager : MonoBehaviour
         if (!audioSource.isPlaying){
             levelWon();
         }
-        if (progressBar.slider.value<=0){
+        if (progressBar.slider.value<=0 && startedLoading == false){
             levelLost();
+            startedLoading = true;
         }
     }
 
