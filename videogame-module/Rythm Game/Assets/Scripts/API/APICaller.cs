@@ -28,7 +28,10 @@ public class APICaller : MonoBehaviour
     }
     public IEnumerator PostRequest(string uri, string json, System.Action<Request> callback=null)
     {
+        Debug.Log(uri);
+        Debug.Log(json);
         UnityWebRequest www = UnityWebRequest.Put(uri,json);
+        www.method = "POST";
         www.SetRequestHeader("Content-Type", "application/json");
         // Request and wait for the desired page.
         yield return www.SendWebRequest();
