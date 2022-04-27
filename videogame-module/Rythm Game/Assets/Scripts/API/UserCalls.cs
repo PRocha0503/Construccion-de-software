@@ -50,10 +50,14 @@ public class UserCalls : MonoBehaviour
         StartCoroutine(www.PostRequest(url+"/login/"+username,json, request =>
         {
             response = request;
-            printRequest(response);
+            // printRequest(response);
             response.response = response.response.Replace("class", "classDB");
+            if(response.responseCode == 200){
             currentUser = JsonUtility.FromJson<User>(response.response);
             sChanger.GoToScene("HomeScreen");
+            }else{
+                Debug.Log(response.response);
+            }
         }));
     }
     public void deleteUser(string username){
