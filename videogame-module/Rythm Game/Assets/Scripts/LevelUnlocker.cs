@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class LevelUnlocker : MonoBehaviour
 {
     [SerializeField] private Button[] levelButtons;
+    public static LevelUnlocker instance;
     private int levelsUnlocked;
 
 
     private void Start()
     {
+        instance = this;
         levelsUnlocked = 2;
         foreach (var button in levelButtons)
         {
