@@ -67,4 +67,8 @@ public class APICaller : MonoBehaviour
         req.responseCode= www.responseCode;
         callback(req);
     }
+    
+    void Awake() {
+        DontDestroyOnLoad(transform.gameObject);
+    }
 }
