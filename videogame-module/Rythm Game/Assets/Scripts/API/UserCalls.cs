@@ -67,7 +67,7 @@ public class UserCalls : MonoBehaviour
             printRequest(response);
         }));
     }
-    public void addUser(string classDB, string username, string pwd, int levels_unlocked=0){
+    public void addUser(string classDB, string username, string pwd, int levels_unlocked=1){
         User myObject = new User();
         myObject.classDB = classDB;
         myObject.username = username;

@@ -14,6 +14,7 @@ public class Request
 
 public class APICaller : MonoBehaviour
 {
+    public int currentLevel = 0;
     public IEnumerator GetRequest(string uri,System.Action<Request> callback=null)
     {
         UnityWebRequest www = UnityWebRequest.Get(uri);
@@ -67,7 +68,7 @@ public class APICaller : MonoBehaviour
         req.responseCode= www.responseCode;
         callback(req);
     }
-    
+
     void Awake() {
         DontDestroyOnLoad(transform.gameObject);
     }
