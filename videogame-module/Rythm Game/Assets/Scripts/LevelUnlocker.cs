@@ -29,6 +29,7 @@ public class LevelUnlocker : MonoBehaviour
 
         instance = this;
         levelsUnlocked = UserCalls.currentUser.levels_unlocked;
+        //levelsUnlocked = 9;
         foreach (var button in levelButtons)
         {
             button.interactable = false;

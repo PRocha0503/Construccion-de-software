@@ -13,7 +13,6 @@ public class MusicalAnimTrigger : MonoBehaviour
 
     void OnAnimationTrigger(KoreographyEvent evt)
         {
-            Debug.Log(eventID);
             animCon.SetTrigger(eventID);
         }
 

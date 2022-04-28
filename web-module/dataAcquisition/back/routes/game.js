@@ -40,9 +40,11 @@ const addGame = async (req, res) => {
 	try {
 		const { username } = req.body;
 		const user = await User.findOne({ where: { username } });
-		req.body[user_id] = user.id;
-		delete req.body[username];
-		const newGame = await Game.create({ ...req.body });
+		const game = {
+			...req.body,
+			user_id: user.id,
+		};
+		const newGame = await Game.create({ ...game });
 		res.send(200, { msg: `A new game was added` });
 	} catch (e) {
 		res.send(500, { msg: e });

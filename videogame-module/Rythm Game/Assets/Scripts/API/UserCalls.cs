@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System;
 
 public class User
 {
@@ -18,6 +20,7 @@ public class UserCalls : MonoBehaviour
     Request response = new Request();
     public static User currentUser = new User();
     SceneChanger sChanger;
+    [SerializeField] private TextMeshProUGUI displayMessage;
 
     void Start()
     {
@@ -56,6 +59,11 @@ public class UserCalls : MonoBehaviour
             currentUser = JsonUtility.FromJson<User>(response.response);
             sChanger.GoToScene("HomeScreen");
             }else{
+                string TrimString = response.response.Trim(new Char[] { ' ', '{', '}' });
+                TrimString = TrimString.Replace("\"", "");
+                TrimString = TrimString.Replace("msg:", "");
+                TrimString = TrimString.Replace("error:", "");
+                displayMessage.text=TrimString;
                 Debug.Log(response.response);
             }
         }));
@@ -78,6 +86,12 @@ public class UserCalls : MonoBehaviour
         {
             response = request;
             printRequest(response);
+
+            string TrimString = response.response.Trim(new Char[] { ' ', '{', '}' });
+            TrimString = TrimString.Replace("\"", "");
+            TrimString = TrimString.Replace("msg:", "");
+            TrimString = TrimString.Replace("error:", "");
+            displayMessage.text=TrimString;
              
         }));
     }
