@@ -2448,6 +2448,7 @@ GameObject:
   - component: {fileID: 1494604636}
   - component: {fileID: 1494604640}
   - component: {fileID: 1494604641}
+  - component: {fileID: 1494604642}
   m_Layer: 0
   m_Name: APICaller
   m_TagString: Untagged
@@ -2538,7 +2539,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4025d2236f19cdb685b54397ef3b07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: localhost:8080/api/user
+  url: 
+--- !u!114 &1494604642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494604635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6970e7b682d24b49a8554c81141d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: http://localhost:8080/api/game
 --- !u!1 &1905439312
 GameObject:
   m_ObjectHideFlags: 0
