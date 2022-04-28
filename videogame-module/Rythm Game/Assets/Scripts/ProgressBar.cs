@@ -24,9 +24,14 @@ public class ProgressBar : MonoBehaviour
         slider.value = health;
     }
 
-    public void AddHealth(int health)
+    public void AddHealth(float health)
     {
         slider.value += health;
+    }
+
+    public void RemoveHealth(float health)
+    {
+        slider.value -= health;
     }
 
     public void StartDecreasing()
