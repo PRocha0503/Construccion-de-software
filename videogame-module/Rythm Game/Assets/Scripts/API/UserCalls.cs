@@ -49,7 +49,6 @@ public class UserCalls : MonoBehaviour
         myObject.pwd = pwd;
         myObject.levels_unlocked = 0;
         string json = JsonUtility.ToJson(myObject);
-        Debug.Log(url+"/login/"+username);
         StartCoroutine(www.PostRequest(url+"/login/"+username,json, request =>
         {
             response = request;
@@ -64,7 +63,6 @@ public class UserCalls : MonoBehaviour
                 TrimString = TrimString.Replace("msg:", "");
                 TrimString = TrimString.Replace("error:", "");
                 displayMessage.text=TrimString;
-                Debug.Log(response.response);
             }
         }));
     }

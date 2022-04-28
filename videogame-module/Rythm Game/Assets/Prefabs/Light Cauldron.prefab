@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2127869724247414444}
   - component: {fileID: 2127869724247414446}
   - component: {fileID: 2127869724247414445}
-  - component: {fileID: 5983383166397948030}
   m_Layer: 0
   m_Name: Flame
   m_TagString: Untagged
@@ -106,18 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5983383166397948030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127869724247414443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dac102c08c77c343b088289549a5b38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8870599887298613215
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,3 +337,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 2127869724613588800}
   flame: {fileID: 2127869724247414445}
+  isSpeaker: 0
+  input: 0
