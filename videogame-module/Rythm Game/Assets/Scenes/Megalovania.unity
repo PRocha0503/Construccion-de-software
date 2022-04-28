@@ -30547,6 +30547,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1084848886}
     - target: {fileID: 3949007823646089577, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
+      propertyPath: healthLoss
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949007823646089577, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: levelLoader
       value: 
       objectReference: {fileID: 1200934589}

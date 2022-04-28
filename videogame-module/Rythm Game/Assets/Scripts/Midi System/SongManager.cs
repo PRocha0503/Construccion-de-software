@@ -51,11 +51,13 @@ public class SongManager : MonoBehaviour
     [SerializeField] private int currentMultiplier;
     [SerializeField] private int multiplierTracker;
     [SerializeField] private int[] multiplierThresholds;
-    [SerializeField] private int barBonus;
+    [SerializeField] private float barBonus;
+     [SerializeField] private float healthLoss;
 
     [Header("Endgame Conditions Settings")]
     [SerializeField] private int timeToWaitAfterWin;
     [SerializeField] private ProgressBar progressBar;
+
     public SceneChanger levelLoader;
     public string sceneAfterWin;
     public string sceneAfterLoose;
@@ -200,6 +202,7 @@ public class SongManager : MonoBehaviour
     {
         totalNotes++;
         ProgressBar.Instance.StartDecreasing();
+        ProgressBar.Instance.RemoveHealth(healthLoss);
         if (currentScore > 0)
         {
             currentScore -= scorePerNote;
