@@ -2333,6 +2333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: {fileID: 1401401988}
   pwd: {fileID: 749130637}
+  _class: {fileID: 329839024}
 --- !u!114 &1494604637
 MonoBehaviour:
   m_ObjectHideFlags: 0
