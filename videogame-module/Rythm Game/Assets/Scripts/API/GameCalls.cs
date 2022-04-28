@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class DBGame {
+    public string username;
+    public int level_id;
+    public int score;
+    public int correct_number_of_notes;
+}
+
 public class GameCalls : MonoBehaviour
 {
     public string url;
     private APICaller www;
     Request response = new Request();
     SceneChanger sChanger;
-
+    public static GameCalls instance;
 
     void Start()
     {
@@ -23,24 +30,18 @@ public class GameCalls : MonoBehaviour
         Debug.Log("Response: "+response.response);
     }
 
-    // public void postGame(string classDB, string username, string pwd, int levels_unlocked=1){
-    //     User myObject = new User();
-    //     myObject.classDB = classDB;
-    //     myObject.username = username;
-    //     myObject.pwd = pwd;
-    //     myObject.levels_unlocked = levels_unlocked;
-    //     string json = JsonUtility.ToJson(myObject);
-    //     StartCoroutine(www.PostRequest(url,json, request =>
-    //     {
-    //         response = request;
-    //         printRequest(response);
+    public void postGame(string username, int level_id, int score, int correct_number_of_notes=1){
+        DBGame myGame = new DBGame();
+        myGame.username = username;
+        myGame.level_id = level_id;
+        myGame.score = score;
+        myGame.correct_number_of_notes = correct_number_of_notes;
+        string json = JsonUtility.ToJson(myGame);
+        StartCoroutine(www.PostRequest(url,json, request =>
+        {
+            response = request;
+            printRequest(response);
              
-    //     }));
-    // }
-
-    // public void addGame()
-    // {
-        
-    //     userAPI.addUser("miguel",username_text,pwd_text);
-    // }
+        }));
+    }
 }

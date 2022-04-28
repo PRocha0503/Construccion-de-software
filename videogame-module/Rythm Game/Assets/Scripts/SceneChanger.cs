@@ -12,10 +12,15 @@ public class SceneChanger : MonoBehaviour
 {
     [SerializeField] private Animator transition;
     [SerializeField] private float transitionTime = 1f;
+    public static int currentLevel = 0;
 
     public void GoToScene(string scene)
     {
         StartCoroutine(LoadLevel(scene));
+    }
+
+    public void changeLevel(int level){
+        currentLevel = level;
     }
 
     IEnumerator LoadLevel(string scene)
