@@ -29,6 +29,7 @@ public class SongManager : MonoBehaviour
     public float noteTime;
     public float noteSpawnX;
     public float noteTapX;
+    public int numberOfNotes;
     public float noteDespawnX
     {
         get
@@ -72,6 +73,7 @@ public class SongManager : MonoBehaviour
         {
             ReadFromFile();
         }
+        
     }
 
     void Update(){
@@ -135,7 +137,10 @@ public class SongManager : MonoBehaviour
         var array = new Melanchall.DryWetMidi.Interaction.Note[notes.Count];
         notes.CopyTo(array, 0);
 
-        foreach (var lane in lanes) lane.SetTimeStamps(array);
+        foreach (var lane in lanes)
+        {
+            lane.SetTimeStamps(array);
+        }
 
         Invoke(nameof(StartSong), songDelayInSeconds);
     }

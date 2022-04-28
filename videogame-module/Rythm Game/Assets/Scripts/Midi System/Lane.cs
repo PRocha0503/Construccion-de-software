@@ -140,4 +140,10 @@ public class Lane : MonoBehaviour
         _songManager.SubstractScore();
         // _songManager.UpdateLights();
     }
+
+    /*public int numberOfNotes()
+    {
+        Debug.Log(notes.Count);
+        return notes.Count;
+    }*/
 }
