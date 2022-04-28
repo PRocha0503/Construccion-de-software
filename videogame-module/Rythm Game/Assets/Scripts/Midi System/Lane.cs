@@ -24,7 +24,7 @@ public class Lane : MonoBehaviour
     int inputIndex = 0;
     private SongManager _songManager;
     [SerializeField] private GameObject noteBreak;
-    
+
     //Note Types by length
     Melanchall.DryWetMidi.Interaction.MusicalTimeSpan sixteenth_note=new MusicalTimeSpan(1,16,true);
     Melanchall.DryWetMidi.Interaction.MusicalTimeSpan eighth_note=new MusicalTimeSpan(1,8,true);
@@ -107,8 +107,8 @@ public class Lane : MonoBehaviour
                     //What happens on note hit
                     Hit();
                     var destruction = Instantiate(noteBreak, notes[inputIndex].gameObject.transform.position, Quaternion.Euler(0,0,110));
-                    destruction.transform.parent = this.transform;
-                    print($"Hit on {inputIndex} note");
+                    destruction.transform.parent = this.transform; 
+                    //print($"Hit on {inputIndex} note");
                     Destroy(notes[inputIndex].gameObject);
                     Destroy(destruction, 10);
 
@@ -133,7 +133,6 @@ public class Lane : MonoBehaviour
     private void Hit()
     {
         _songManager.AddScore();
-        // _songManager.UpdateLights();
     }
     private void Miss()
     {
@@ -141,9 +140,8 @@ public class Lane : MonoBehaviour
         // _songManager.UpdateLights();
     }
 
-    /*public int numberOfNotes()
+    public int GetTotalNotes()
     {
-        Debug.Log(notes.Count);
-        return notes.Count;
-    }*/
+        return inputIndex;
+    }
 }

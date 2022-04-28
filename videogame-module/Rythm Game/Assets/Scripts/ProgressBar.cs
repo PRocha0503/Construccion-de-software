@@ -37,11 +37,6 @@ public class ProgressBar : MonoBehaviour
             StartCoroutine(DecreaseBar());
         }
     }
-    
-    /*public void StopDecreasing()
-    {
-        StopCoroutine(DecreaseBar()); 
-    }*/
 
     private void Start()
     {
