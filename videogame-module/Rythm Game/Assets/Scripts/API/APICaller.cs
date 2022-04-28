@@ -17,7 +17,8 @@ public class APICaller : MonoBehaviour
     public int currentLevel = 0;
     public IEnumerator GetRequest(string uri,System.Action<Request> callback=null)
     {
-        UnityWebRequest www = UnityWebRequest.Get(uri);
+        using(UnityWebRequest www = UnityWebRequest.Get(uri))
+        {
         // Request and wait for the desired page.
         yield return www.SendWebRequest();
         Request req = new Request();
@@ -26,12 +27,12 @@ public class APICaller : MonoBehaviour
         req.response =  www.downloadHandler.text;
         req.responseCode= www.responseCode;
         callback(req);
+        }
     }
     public IEnumerator PostRequest(string uri, string json, System.Action<Request> callback=null)
     {
-        Debug.Log(uri);
-        Debug.Log(json);
-        UnityWebRequest www = UnityWebRequest.Put(uri,json);
+        using (UnityWebRequest www = UnityWebRequest.Put(uri,json))
+        {
         www.method = "POST";
         www.SetRequestHeader("Content-Type", "application/json");
         // Request and wait for the desired page.
@@ -42,10 +43,12 @@ public class APICaller : MonoBehaviour
         req.response =  www.downloadHandler.text;
         req.responseCode= www.responseCode;
         callback(req);
+        }
     }
     public IEnumerator PutRequest(string uri, string json, System.Action<Request> callback=null)
     {
-        UnityWebRequest www = UnityWebRequest.Put(uri,json);
+        using (UnityWebRequest www = UnityWebRequest.Put(uri,json))
+        {
         www.SetRequestHeader("Content-Type", "application/json");
         // Request and wait for the desired page.
         yield return www.SendWebRequest();
@@ -55,10 +58,12 @@ public class APICaller : MonoBehaviour
         req.response =  www.downloadHandler.text;
         req.responseCode= www.responseCode;
         callback(req);
+        }
     }
     public IEnumerator DeleteRequest(string uri, System.Action<Request> callback=null)
     {
-        UnityWebRequest www = UnityWebRequest.Delete(uri);
+        using (UnityWebRequest www = UnityWebRequest.Delete(uri))
+        {
         // Request and wait for the desired page.
         yield return www.SendWebRequest();
         Request req = new Request();
@@ -67,6 +72,7 @@ public class APICaller : MonoBehaviour
         req.response =  www.responseCode.ToString();
         req.responseCode= www.responseCode;
         callback(req);
+        }
     }
 
     void Awake() {
