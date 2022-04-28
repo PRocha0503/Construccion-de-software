@@ -89,10 +89,12 @@ public class SongManager : MonoBehaviour
 
     void levelWon(){
         //Change screens if the level is won
+        GameData.instance.setScore(currentScore);
         ProgressBar.Instance.isPlaying = false;
         StartCoroutine(waitTime(timeToWaitAfterWin, sceneAfterWin));
     }
     void levelLost(){
+        GameData.instance.setScore(currentScore);
         //Change screens if the level is lost
         StartCoroutine(waitTime(0, sceneAfterLoose));
     }
