@@ -17,7 +17,10 @@ using TMPro;
 
 public class SongManager : MonoBehaviour
 {
+    private int totalCorrectNotes;
+    private int totalNotes;
     // Midi Stuff
+    
     [Header("Midi Settings")]
     public static SongManager Instance;
     public AudioSource audioSource;
@@ -29,7 +32,7 @@ public class SongManager : MonoBehaviour
     public float noteTime;
     public float noteSpawnX;
     public float noteTapX;
-    public int numberOfNotes;
+    public int numberOfCorrectNotes;
     public float noteDespawnX
     {
         get
@@ -54,8 +57,8 @@ public class SongManager : MonoBehaviour
     [SerializeField] private int timeToWaitAfterWin;
     [SerializeField] private ProgressBar progressBar;
     public SceneChanger levelLoader;
-    public string sceneAfterWin; 
-    public string sceneAfterLoose; 
+    public string sceneAfterWin;
+    public string sceneAfterLoose;
     public static MidiFile midiFile;
 
     private bool startedLoading = false;
@@ -78,24 +81,33 @@ public class SongManager : MonoBehaviour
 
     void Update(){
         //Check if the song has ended -> the game has been won
-        if (!audioSource.isPlaying){
+        if (!audioSource.isPlaying && startedLoading == false){
+            startedLoading = true;
             levelWon();
         }
         if (progressBar.slider.value<=0 && startedLoading == false){
-            levelLost();
             startedLoading = true;
+            levelLost();
         }
     }
 
-    void levelWon(){
+    void levelWon()
+    {
         //Change screens if the level is won
+        Debug.Log(totalCorrectNotes);
+        Debug.Log(totalNotes);
+
         GameData.instance.setScore(currentScore);
+
         ProgressBar.Instance.isPlaying = false;
+
         StartCoroutine(waitTime(timeToWaitAfterWin, sceneAfterWin));
     }
     void levelLost(){
         GameData.instance.setScore(currentScore);
         //Change screens if the level is lost
+        Debug.Log(totalCorrectNotes);
+        Debug.Log(totalNotes);
         StartCoroutine(waitTime(0, sceneAfterLoose));
     }
 
@@ -142,6 +154,7 @@ public class SongManager : MonoBehaviour
         foreach (var lane in lanes)
         {
             lane.SetTimeStamps(array);
+ 
         }
 
         Invoke(nameof(StartSong), songDelayInSeconds);
@@ -157,6 +170,8 @@ public class SongManager : MonoBehaviour
 
     public void AddScore()
     {
+        totalCorrectNotes++;
+        totalNotes++;
         //Increase the score
         ProgressBar.Instance.AddHealth(barBonus);
         ProgressBar.Instance.StartDecreasing();
@@ -187,6 +202,7 @@ public class SongManager : MonoBehaviour
 
     public void SubstractScore()
     {
+        totalNotes++;
         ProgressBar.Instance.StartDecreasing();
         if (currentScore > 0)
         {
@@ -196,7 +212,7 @@ public class SongManager : MonoBehaviour
         else
         {
             currentScore -= 0;
-                scoreText.text = "Score: " + currentScore;
+            scoreText.text = "Score: " + currentScore;
         }
 
         currentMultiplier = 1;
