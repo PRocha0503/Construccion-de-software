@@ -9,6 +9,7 @@ public class RegisterUser : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private GameObject username;
     [SerializeField] private GameObject pwd;
+    [SerializeField] private GameObject _class;
     private string username_text;
     private string pwd_text;
     private UserCalls userAPI;
@@ -20,6 +21,7 @@ public class RegisterUser : MonoBehaviour
     {
         string username_text = username.GetComponent<TMP_InputField>().text;
         string pwd_text = pwd.GetComponent<TMP_InputField>().text;
-        userAPI.addUser("miguel",username_text,pwd_text);
+        string class_text = _class.GetComponent<TMP_InputField>().text;
+        userAPI.addUser(class_text,username_text,pwd_text);
     }
 }
