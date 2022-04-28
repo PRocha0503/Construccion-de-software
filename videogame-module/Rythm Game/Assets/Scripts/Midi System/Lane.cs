@@ -108,7 +108,6 @@ public class Lane : MonoBehaviour
                     Hit();
                     var destruction = Instantiate(noteBreak, notes[inputIndex].gameObject.transform.position, Quaternion.Euler(0,0,110));
                     destruction.transform.parent = this.transform; 
-                    //print($"Hit on {inputIndex} note");
                     Destroy(notes[inputIndex].gameObject);
                     Destroy(destruction, 10);
 
@@ -117,14 +116,13 @@ public class Lane : MonoBehaviour
                 else
                 {
                     //what happens if player presses key at wrong time
-                    // Miss();  //Substracts score if button pressed at wrong time
+                    Miss();  //Substracts score if button pressed at wrong time
                 }
             }
             if (timeStamp + marginOfError <= audioTime)
             {
                 //What happens if player doesnt hit key at all
                 Miss();
-                // print($"Missed {inputIndex} note");
                 inputIndex++;
             }
         }       

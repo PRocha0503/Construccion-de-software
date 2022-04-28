@@ -30604,7 +30604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3949007823646089577, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: sceneAfterWin
-      value: LevelSelect
+      value: GameOver
       objectReference: {fileID: 0}
     - target: {fileID: 3949007823646089577, guid: cecbe0336a3dd3948bce7c99a7038925, type: 3}
       propertyPath: multiplierText

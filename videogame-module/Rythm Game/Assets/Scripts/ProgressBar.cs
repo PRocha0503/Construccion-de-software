@@ -45,7 +45,6 @@ public class ProgressBar : MonoBehaviour
 
     IEnumerator DecreaseBar()
     {
-        Debug.Log("Starting to decrease");
         while (isPlaying)
         {
             slider.value -= emptyAmount * Time.deltaTime;
