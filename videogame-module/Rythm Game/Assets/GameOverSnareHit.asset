@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: GameOverSnareHit
+  m_EditorClassIdentifier: 
+  mEventID: SnareDrumHit
+  mEventList:
+  - mStartSample: 788940
+    mEndSample: 788940
+  - mStartSample: 803520
+    mEndSample: 803520
+  - mStartSample: 817830
+    mEndSample: 817830
+  - mStartSample: 869138
+    mEndSample: 869138
+  - mStartSample: 891405
+    mEndSample: 891405
+  - mStartSample: 957338
+    mEndSample: 957338
+  - mStartSample: 979605
+    mEndSample: 979605
+  - mStartSample: 1045538
+    mEndSample: 1045538
+  - mStartSample: 1067805
+    mEndSample: 1067805
+  - mStartSample: 1133738
+    mEndSample: 1133738
+  - mStartSample: 1148438
+    mEndSample: 1148438
+  - mStartSample: 1163138
+    mEndSample: 1163138
+  - mStartSample: 1177838
+    mEndSample: 1177838
+  _SerializedPayloadTypes: []
+  _AssetPayloads: []
+  _AssetPayloadIdxs: 
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 
