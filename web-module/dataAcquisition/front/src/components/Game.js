@@ -8,7 +8,7 @@ import Box from "@material-ui/core/Box";
 import Style from "../styles/style";
 const axios = require("axios").default;
 
-const Game = ({alert}) => {
+const Game = ({ alert }) => {
 	const api = "http://localhost:8080/api";
 	const [users, setUsers] = useState({});
 	const [change, setChange] = useState(0);
@@ -34,7 +34,7 @@ const Game = ({alert}) => {
 	const [formValues, setFormValues] = useState(defaultValues);
 	const [editValues, setEditValues] = useState(defaultEditValues);
 	const [deleteValues, setDeleteValues] = useState(defaultDeleteValues);
-	const columns: GridColDef[] = [
+	const columns = [
 		{ field: "id", headerName: "Game ID", width: 250, id: true },
 		{ field: "user_id", headerName: "User ID", width: 250 },
 		{

@@ -37,6 +37,11 @@ const addUser = async (req, res) => {
 		delete req.body.classDB;
 	}
 	try {
+		const { username } = req.body;
+		const user = await User.findOne({ where: { username } });
+		if (user) {
+			throw `Username already in use`;
+		}
 		const newUser = await User.create({ ...req.body });
 		res.send(200, { msg: `${newUser.username} was added` });
 	} catch (e) {
