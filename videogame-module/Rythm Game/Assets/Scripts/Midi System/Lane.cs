@@ -24,6 +24,7 @@ public class Lane : MonoBehaviour
     int inputIndex = 0;
     private SongManager _songManager;
     [SerializeField] private GameObject noteBreak;
+    private bool songPlaying = false;
 
     //Note Types by length
     Melanchall.DryWetMidi.Interaction.MusicalTimeSpan sixteenth_note=new MusicalTimeSpan(1,16,true);
@@ -105,6 +106,7 @@ public class Lane : MonoBehaviour
                 if (Math.Abs(audioTime - timeStamp) < marginOfError)
                 {
                     //What happens on note hit
+                    songPlaying = true;
                     Hit();
                     var destruction = Instantiate(noteBreak, notes[inputIndex].gameObject.transform.position, Quaternion.Euler(0,0,110));
                     destruction.transform.parent = this.transform; 
@@ -121,6 +123,7 @@ public class Lane : MonoBehaviour
             }
             if (timeStamp + marginOfError <= audioTime)
             {
+                songPlaying = true;
                 //What happens if player doesnt hit key at all
                 Miss();
                 inputIndex++;
@@ -134,6 +137,7 @@ public class Lane : MonoBehaviour
     }
     private void Miss()
     {
+        if (songPlaying == false) return;
         _songManager.SubstractScore();
         // _songManager.UpdateLights();
     }
