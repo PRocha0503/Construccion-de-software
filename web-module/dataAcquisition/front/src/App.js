@@ -1,18 +1,22 @@
 import { useState } from "react";
-import Users from "./components/Users";
-import Levels from "./components/Levels";
-import Game from "./components/Game";
+
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
 import Typography from "@mui/material/Typography";
 import Alert from "@mui/material/Alert";
+
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import AnalyticsIcon from "@mui/icons-material/Analytics";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import PendingIcon from "@mui/icons-material/Pending";
+import VideogameAssetIcon from "@mui/icons-material/VideogameAsset";
+
+import Screen from "./pages/Screen";
 
 import Style from "./styles/style";
 function App() {
 	const classes = Style();
-	const [showUsers, setShowUsers] = useState(false);
-	const [showLevels, setShowLevels] = useState(false);
-	const [showGames, setShowGames] = useState(false);
+	const [tab, setTab] = useState(0);
 	const [showAlert, setShowAlert] = useState(false);
 	const [alertMessage, setAlertMessage] = useState(["", ""]);
 
@@ -36,19 +40,23 @@ function App() {
 
 			<Box className={classes.container}>
 				<Typography variant="h2" component="h2">
-					Endpoints Check
+					Admin View
 				</Typography>
 			</Box>
-			<Box className={classes.container}>
-				<Button onClick={() => toggle(setShowUsers, showUsers)}>User</Button>
-				<Button onClick={() => toggle(setShowLevels, showLevels)}>
-					Levels
-				</Button>
-				<Button onClick={() => toggle(setShowGames, showGames)}>Games</Button>
-			</Box>
-			{showUsers ? <Users alert={alert}></Users> : <></>}
-			{showLevels ? <Levels alert={alert}></Levels> : <></>}
-			{showGames ? <Game alert={alert}></Game> : <></>}
+
+			<BottomNavigation
+				showLabels
+				value={tab}
+				onChange={(event, newValue) => {
+					setTab(newValue);
+				}}
+			>
+				<BottomNavigationAction label="Analytics" icon={<AnalyticsIcon />} />
+				<BottomNavigationAction label="Users" icon={<EmojiPeopleIcon />} />
+				<BottomNavigationAction label="Levels" icon={<PendingIcon />} />
+				<BottomNavigationAction label="Games" icon={<VideogameAssetIcon />} />
+			</BottomNavigation>
+			<Screen component={tab} alert={alert}></Screen>
 		</Box>
 	);
 }

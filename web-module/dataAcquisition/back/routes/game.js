@@ -3,6 +3,7 @@ const router = Router();
 
 const Game = require("../models/game");
 const User = require("../models/user");
+const Level = require("../models/level");
 const { updateFields, gameExists } = require("../middleware/game");
 
 const getAllGames = async (req, res) => {
@@ -38,8 +39,14 @@ const getPlayerGames = async (req, res) => {
 
 const addGame = async (req, res) => {
 	try {
-		const { username } = req.body;
+		const { username, score, level_id } = req.body;
 		const user = await User.findOne({ where: { username } });
+		const level = await Level.findOne({ where: { level_number: level_id } });
+		console.log(level.max_possible_score);
+		if (score > 0.6 * level.max_possible_score) {
+			user.set({ levels_unlocked: user.levels_unlocked + 1 });
+			await user.save();
+		}
 		const game = {
 			...req.body,
 			user_id: user.id,
