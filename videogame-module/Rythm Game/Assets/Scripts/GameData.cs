@@ -34,6 +34,10 @@ public class GameData : MonoBehaviour
         currentGameData.score = _score;
     }
 
+    public void setCorrect(int _correct_number_of_notes){
+        currentGameData.correct_number_of_notes = _correct_number_of_notes;
+    }
+
     void Awake() {
         DontDestroyOnLoad(transform.gameObject);
     }

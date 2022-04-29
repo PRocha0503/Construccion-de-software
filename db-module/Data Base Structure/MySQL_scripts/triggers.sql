@@ -19,8 +19,8 @@ CREATE TRIGGER upd_max_p_score BEFORE UPDATE ON `level`
        FOR EACH ROW
        BEGIN
 		SET NEW.max_possible_score = IF(NEW.total_number_of_notes > 50,
-									IF(NEW.total_number_of_notes > 100,150+((NEW.total_number_of_notes-100)*3),50 +(NEW.total_number_of_notes-50)*2)
-                                    ,NEW.total_number_of_notes);
+									IF(NEW.total_number_of_notes > 150,(250*50)+((NEW.total_number_of_notes-150)*3*50),50*50 +(NEW.total_number_of_notes-50)*2*50)
+                                    ,NEW.total_number_of_notes * 50);
        END;//
 DELIMITER ;
 

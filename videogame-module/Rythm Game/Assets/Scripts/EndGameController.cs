@@ -18,7 +18,9 @@ public class EndGameController : MonoBehaviour
         gameAPI.postGame(
             GameData.currentGameData.username,
             GameData.currentGameData.level,
-            GameData.currentGameData.score);
+            GameData.currentGameData.score,
+            GameData.currentGameData.correct_number_of_notes
+            );
         
     }
 }
