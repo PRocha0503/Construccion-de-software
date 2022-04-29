@@ -30,13 +30,14 @@ public class GameData : MonoBehaviour
         Debug.Log("Score:" + currentGameData.score);
     }
 
-    public void setScore(int _score){
-        currentGameData.score = _score;
+    public void setScore(int pscore,int pcorrect){
+        Debug.Log("Setting Correct");
+        Debug.Log(pcorrect);
+        currentGameData.correct_number_of_notes = pcorrect;
+        currentGameData.score = pscore;
     }
 
-    public void setCorrect(int _correct_number_of_notes){
-        currentGameData.correct_number_of_notes = _correct_number_of_notes;
-    }
+
 
     void Awake() {
         DontDestroyOnLoad(transform.gameObject);
