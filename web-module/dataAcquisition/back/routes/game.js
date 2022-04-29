@@ -44,8 +44,10 @@ const addGame = async (req, res) => {
 		const level = await Level.findOne({ where: { level_number: level_id } });
 		console.log(level.max_possible_score);
 		if (score > 0.6 * level.max_possible_score) {
-			user.set({ levels_unlocked: user.levels_unlocked + 1 });
-			await user.save();
+			if (level_id == user.levels_unlocked) {
+				user.set({ levels_unlocked: user.levels_unlocked + 1 });
+				await user.save();
+			}
 		}
 		const game = {
 			...req.body,
