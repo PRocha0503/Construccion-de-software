@@ -16,7 +16,7 @@ public class GameCalls : MonoBehaviour
     Request response = new Request();
     SceneChanger sChanger;
     public static GameCalls instance;
-
+    private UserCalls userAPI;
     void Start()
     {
         www = FindObjectOfType<APICaller>();
@@ -41,6 +41,8 @@ public class GameCalls : MonoBehaviour
         {
             response = request;
             printRequest(response);
+            userAPI = FindObjectOfType<UserCalls>();
+            userAPI.getUser(UserCalls.currentUser.username);
              
         }));
     }
