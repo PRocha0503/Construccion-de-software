@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Rythm Game</title>
+    <title>Unity WebGL Player | Party of the Drummancer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1366 height=768></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Rythm Game</div>
+        <div id="unity-build-title">Party of the Drummancer</div>
       </div>
     </div>
     <script>
@@ -62,8 +62,8 @@
         frameworkUrl: buildUrl + "/Unity.framework.js",
         codeUrl: buildUrl + "/Unity.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Rythm Game",
+        companyName: "PAS",
+        productName: "Party of the Drummancer",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1366px";
+        canvas.style.height = "768px";
       }
 
       loadingBar.style.display = "block";
