@@ -10,8 +10,8 @@ const unityContext = new UnityContext({
 const UnityGame = () => {
   useEffect(function () {
     unityContext.on("canvas", function (canvas) {
-      canvas.width = 500;
-      canvas.height = 250;
+      canvas.width = 2049;
+      canvas.height = 1152;
     });
   }, []);
   function handleOnClickFullscreen() {
