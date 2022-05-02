@@ -22,7 +22,7 @@ EditorBuildSettings:
     guid: b4ce5083ca3a429499d1cc3d578efe5d
   - enabled: 1
     path: Assets/Scenes/Megalovania.unity
-    guid: 5e56a035a85c5fa4d82a978bab561679
+    guid: 9562e0be057a0a942958b859636143d1
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: bbe31cb35293f49459fa9e07a9f9a25c
