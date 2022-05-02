@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: 8ad5d38a11dae094a80e28e2a2cfda32
   - enabled: 1
-    path: Assets/Scenes/Megalovania.unity
+    path: Assets/Scenes/WeWillRockYou.unity
     guid: 1751c2da6639285499465d452f72e729
   - enabled: 1
     path: Assets/Scenes/ClintEastwood.unity
