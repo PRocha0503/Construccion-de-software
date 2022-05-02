@@ -2696,7 +2696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcba18fbd9be126628d48942b377c1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: localhost:8080/api/user
+  url: http://localhost:8080/api/user
   displayMessage: {fileID: 1146566862}
 --- !u!114 &1494604638
 MonoBehaviour:
@@ -2752,7 +2752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4025d2236f19cdb685b54397ef3b07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: localhost:8080/api/level
+  url: http://localhost:8080/api/level
 --- !u!114 &1494604642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2765,7 +2765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6970e7b682d24b49a8554c81141d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: localhost:8080/api/game
+  url: http://localhost:8080/api/game
 --- !u!1 &1905439312
 GameObject:
   m_ObjectHideFlags: 0
