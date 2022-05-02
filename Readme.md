@@ -74,3 +74,4 @@ npm run start
 > - SCRUM meetings documentation - https://www.notion.so/Documentaci-n-Party-of-the-drumancer-0273914c292549298ddc3217197c1b4c
 > - SCRUM board - https://trello.com/b/UmyvtmKg
 > - Use cases UML diagram - https://drive.google.com/file/d/1fw1fh4GsFW3W6OVMM372a9XNNlQvyU_8/view?usp=sharing
+> - The final documentation can be found under the following path: Construccion-de-software/software-engineering-module/Requerimientos/Final documentation.pdf
