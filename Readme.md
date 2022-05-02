@@ -75,3 +75,5 @@ npm run start
 > - SCRUM board - https://trello.com/b/UmyvtmKg
 > - Use cases UML diagram - https://drive.google.com/file/d/1fw1fh4GsFW3W6OVMM372a9XNNlQvyU_8/view?usp=sharing
 > - The final documentation can be found under the following path: Construccion-de-software/software-engineering-module/Requerimientos/Final documentation.pdf
+> - The game design document can be found in this directory under the name: GameDesign.md
+> - A one pager document can be found in this directory under the name: one-page-PAS.pdf
