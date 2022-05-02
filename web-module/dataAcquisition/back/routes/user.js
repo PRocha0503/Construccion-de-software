@@ -3,6 +3,7 @@ const router = Router();
 
 const User = require("../models/user");
 const { updateFields, userExists } = require("../middleware/user");
+const { Sequelize } = require("sequelize");
 
 const getAllUsers = async (req, res) => {
 	try {
@@ -85,7 +86,24 @@ const login = async (req, res) => {
 	}
 };
 
+const studentsPerClass = async (req, res) => {
+	try {
+		const users = await User.findAll({
+			attributes: [
+				["class", "name"],
+				[Sequelize.fn("COUNT", Sequelize.col("username")), "count"],
+			],
+			group: "class",
+		});
+		res.send(200, users);
+	} catch (e) {
+		console.log(e);
+		res.send(500, { msg: e });
+	}
+};
+
 router.get("/", getAllUsers);
+router.get("/studentsPerClass", studentsPerClass);
 router.get("/:username", userExists, getUser);
 router.post("/login/:username", userExists, login);
 router.get("/class/:className", getClassUsers);

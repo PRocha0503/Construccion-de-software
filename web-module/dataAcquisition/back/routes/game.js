@@ -5,6 +5,7 @@ const Game = require("../models/game");
 const User = require("../models/user");
 const Level = require("../models/level");
 const { updateFields, gameExists } = require("../middleware/game");
+const { Sequelize } = require("sequelize");
 
 const getAllGames = async (req, res) => {
 	try {
@@ -83,7 +84,23 @@ const deleteGame = async (req, res) => {
 	}
 };
 
+const topScores = async (req, res) => {
+	try {
+		const { level } = req.params;
+		const matches = await Game.findAll({
+			attributes: ["score", "user_id"],
+			where: { level_id: level },
+			order: [["score", "DESC"]],
+		});
+		res.send(200, matches);
+	} catch (e) {
+		console.error(e);
+		res.send(500, { msg: e });
+	}
+};
+
 router.get("/", getAllGames);
+router.get("/topScores/:level", topScores);
 router.get("/:game_id", getGame);
 router.get("/player/:id", getPlayerGames);
 router.post("/", addGame);
