@@ -5,6 +5,7 @@ const unityContext = new UnityContext({
   dataUrl: "../Unity/Build/Unity.data",
   frameworkUrl: "../Unity/Build/Unity.framework.js",
   codeUrl: "../Unity/Build/Unity.wasm",
+  streamingAssetsUrl: "../Unity/StreamingAssets"
 });
 
 const UnityGame = () => {
