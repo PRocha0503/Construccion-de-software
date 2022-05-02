@@ -5,13 +5,14 @@ const unityContext = new UnityContext({
   dataUrl: "../Unity/Build/Unity.data",
   frameworkUrl: "../Unity/Build/Unity.framework.js",
   codeUrl: "../Unity/Build/Unity.wasm",
+  streamingAssetsUrl: "../Unity/StreamingAssets",
 });
 
 const UnityGame = () => {
   useEffect(function () {
     unityContext.on("canvas", function (canvas) {
-      canvas.width = 2049;
-      canvas.height = 1152;
+      canvas.width = 1366;
+      canvas.height = 768;
     });
   }, []);
   function handleOnClickFullscreen() {
