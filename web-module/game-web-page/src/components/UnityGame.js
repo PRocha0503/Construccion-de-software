@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
+import { Typography, Container, Button, Box, Grid } from "@material-ui/core";
+
 const unityContext = new UnityContext({
   loaderUrl: "../Unity/Build/Unity.loader.js",
   dataUrl: "../Unity/Build/Unity.data",
@@ -21,15 +23,26 @@ const UnityGame = () => {
 
   return (
     <>
-      <div className="game">
-        <button onClick={handleOnClickFullscreen}>Fullscreen</button>
-        <Unity
-          unityContext={unityContext}
-          matchWebGLToCanvasSize={false}
-          style={{ width: "1366px", height: "768px" }}
-        />
-      </div>
-      <p>Aqui deberia de estar el juego</p>
+      <Grid container>
+        <Button
+          sx={{ marginRight: "7.5%" }}
+          variant="contained"
+          color="success"
+          onClick={handleOnClickFullscreen}
+        >
+          Fullscreen
+        </Button>
+      </Grid>
+      <Unity
+        unityContext={unityContext}
+        matchWebGLToCanvasSize={false}
+        style={{
+          width: "85%",
+          height: "600px",
+          borderRadius: "25px",
+          marginBottom: "5%",
+        }}
+      />
     </>
   );
 };
