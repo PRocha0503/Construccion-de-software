@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+Script working with koreographer extension used to check for events and calling functions on them
+05/04/2022
+*/
 using UnityEngine;
 using SonicBloom.Koreo;
 

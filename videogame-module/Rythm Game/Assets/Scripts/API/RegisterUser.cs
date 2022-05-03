@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+Script used to handle register calls from unity
+05/04/2022
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
