@@ -186,9 +186,24 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   songDelayInSeconds: 0
-  marginOfError: 0.5
+  marginOfError: 0.2
   inputDelayInMilliseconds: 0
   fileLocation: test2.mid
   noteTime: 4
   noteSpawnX: 12
   noteTapX: -8.501
+  numberOfCorrectNotes: 0
+  currentScore: 0
+  scorePerNote: 0
+  scoreText: {fileID: 0}
+  multiplierText: {fileID: 0}
+  currentMultiplier: 0
+  multiplierTracker: 0
+  multiplierThresholds: 
+  barBonus: 0.08
+  healthLoss: 0.1
+  timeToWaitAfterWin: 0
+  progressBar: {fileID: 0}
+  levelLoader: {fileID: 0}
+  sceneAfterWin: GameOver
+  sceneAfterLoose: GameOver

@@ -1,3 +1,8 @@
+/*
+By: Luis Javier Karam, Pablo Rocha and Miguel Arriaga
+Simple script used to add the user name to the menu screen
+05/04/2022
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
