@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
-import { Typography, Container, Button, Box, Grid } from "@material-ui/core";
+import { Typography, Container, Button, Box, Grid } from "@mui/material";
 
 const unityContext = new UnityContext({
 	loaderUrl: "../Unity/Build/Unity.loader.js",

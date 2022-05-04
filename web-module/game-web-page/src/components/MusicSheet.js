@@ -9,8 +9,8 @@ import {
 	Button,
 	Grid,
 	Container,
-	Link,
-} from "@material-ui/core";
+} from "@mui/material";
+import { Link } from "react-router-dom";
 
 function MusicSheet() {
 	return (
@@ -65,15 +65,18 @@ function MusicSheet() {
 								</CardContent>
 							</CardActionArea>
 							<CardActions>
-								<Link
-									rel="noopener noreferrer"
-									target="_blank"
-									href="https://github.com/PRocha0503/Construccion-de-software"
+								<Button
+									size="small"
+									color="primary"
+									onClick={() => {
+										window.open(
+											"https://github.com/PRocha0503/Construccion-de-software",
+											"_blank"
+										);
+									}}
 								>
-									<Button size="small" color="primary">
-										Repository
-									</Button>
-								</Link>
+									Repository
+								</Button>
 							</CardActions>
 						</Card>
 					</Grid>
@@ -97,11 +100,7 @@ function MusicSheet() {
 								</CardContent>
 							</CardActionArea>
 							<CardActions>
-								<Link
-									rel="noopener noreferrer"
-									target="_blank"
-									href="http://localhost:3001"
-								>
+								<Link to="admin">
 									<Button size="small" color="primary">
 										Go to page
 									</Button>
@@ -129,15 +128,18 @@ function MusicSheet() {
 								</CardContent>
 							</CardActionArea>
 							<CardActions>
-								<Link
-									rel="noopener noreferrer"
-									target="_blank"
-									href="https://www.schoolofrock.com/resources/drums/drum-notation-for-beginners"
+								<Button
+									size="small"
+									color="primary"
+									onClick={() => {
+										window.open(
+											"https://www.schoolofrock.com/resources/drums/drum-notation-for-beginners",
+											"_blank"
+										);
+									}}
 								>
-									<Button size="small" color="primary">
-										Go to video
-									</Button>
-								</Link>
+									Go to video
+								</Button>
 							</CardActions>
 						</Card>
 					</Grid>
