@@ -1,27 +1,4 @@
-# Software-Construction-And-Decision-Making
-
-## Team members
-
-> - Pablo Rocha A01028638
-> - Miguel Arriaga A01028570
-> - Luis Javier Karam A01751941
-
-## Summary
-
-Github repository for the "TC2005B Construcción de software y toma de decisiones" final project, a videogame for Percussive Arts Society.
-
-## Table of contents
-
-> - [Title](#software-construction-and-decision-making)
-> - [Team members](#team-members)
-> - [Summary](#summary)
-> - [Table of contents](#table-of-contents)
->   - [Resources (Documentation and other links)](#resources-documentation-and-other-links)
->   - [Installation](#installation)
->   - [Usage](#usage)
->     - [Screenshots](#screenshots)
->     - [Features](#features)
->     - [Content](#content)
+# INSTRUCTIONS
 
 ## Resources (Documentation and other links)
 
@@ -70,34 +47,3 @@ npm run start
 ```
 
 12. These commands will open the admin. webpage for the game.
-
-### Screenshots
-
-#### Game screenshots
-
-<img src="./markdown-images/game-login.png"/>
-<img src="./markdown-images/game-home.png"/>
-<img src="./markdown-images/game-level-select.png"/>
-<img src="./markdown-images/game-gameplay.png"/>
-<img src="./markdown-images/game-endgame.png"/>
-
-#### Admin webpage screenshots
-
-<img src="./markdown-images/admin-home.png"/>
-<img src="./markdown-images/admin-graphs.png"/>
-<img src="./markdown-images/admin-users.png"/>
-
-### Features
-
-- The game connects itself with the API, allowing you to sing in and login with your same account latter.
-- Depending on your score you can unlock the next level for the game. This will be registered in the database.
-- The admin. view allows you to see statistics in tables and charts, such as high scores and users.
-- The admin can also add new levels, users amd games or even edit or delete them.
-
-### Content
-
-> - Documentation - Final documentation of the game
-> - db-module - Database module
-> - web-module - Web module
-> - videogame-module - Videogames module
-> - software-engineering-module - Software Engineering module
