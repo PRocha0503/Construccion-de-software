@@ -16,12 +16,22 @@ Github repository for the "TC2005B Construcción de software y toma de decisione
 > - [Team members](#team-members)
 > - [Summary](#summary)
 > - [Table of contents](#table-of-contents)
+>   - [Resources (Documentation and other links)](#resources-documentation-and-other-links)
 >   - [Installation](#installation)
 >   - [Usage](#usage)
 >     - [Screenshots](#screenshots)
 >     - [Features](#features)
 >     - [Content](#content)
->   - [Resources (Documentation and other links)](#resources-documentation-and-other-links)
+
+## Resources (Documentation and other links)
+
+> - The final documentation can be found under the following path: Construccion-de-software/Documentation/Final documentation
+> - The instructions to run the project can be found under the following path: Construccion-de-software/Documentation/Instructions
+> - The game design document can be found under the following path: Construccion-de-software/Documentation/GameDesign.md
+> - A one pager document can be found under the following path: Construccion-de-software/Documentation/one-page-PAS.pdf
+> - SCRUM meetings documentation - https://www.notion.so/Documentaci-n-Party-of-the-drumancer-0273914c292549298ddc3217197c1b4c
+> - SCRUM board - https://trello.com/b/UmyvtmKg
+> - Use cases UML diagram - https://drive.google.com/file/d/1fw1fh4GsFW3W6OVMM372a9XNNlQvyU_8/view?usp=sharing
 
 ## Installation
 
@@ -85,16 +95,8 @@ npm run start
 
 ### Content
 
+> - Documentation - Final documentation of the game
 > - db-module - Database module
 > - web-module - Web module
 > - videogame-module - Videogames module
 > - software-engineering-module - Software Engineering module
-
-## Resources (Documentation and other links)
-
-> - SCRUM meetings documentation - https://www.notion.so/Documentaci-n-Party-of-the-drumancer-0273914c292549298ddc3217197c1b4c
-> - SCRUM board - https://trello.com/b/UmyvtmKg
-> - Use cases UML diagram - https://drive.google.com/file/d/1fw1fh4GsFW3W6OVMM372a9XNNlQvyU_8/view?usp=sharing
-> - The final documentation can be found under the following path: Construccion-de-software/software-engineering-module/Requerimientos/Final documentation.pdf
-> - The game design document can be found in this directory under the name: GameDesign.md
-> - A one pager document can be found in this directory under the name: one-page-PAS.pdf
