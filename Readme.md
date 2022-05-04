@@ -11,7 +11,7 @@
 Github repository for the "TC2005B Construcción de software y toma de decisiones" final project, a videogame for Percussive Arts Society.
 
 Link to presentation video
-https://www.youtube.com/watch?v=L9mlbVmXWDo&ab_channel=PabloRocha
+https://www.youtube.com/watch?v=DLAVMNRuGy4
 
 ## Table of contents
 
